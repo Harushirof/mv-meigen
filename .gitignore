@@ -1,0 +1,17 @@
+# 秘密情報
+.env
+.env.*
+
+# 音声、動画、フォント（容量が大きいので Git に入れない）
+*.mp3
+*.wav
+*.m4a
+*.mp4
+*.mov
+*.webm
+*.ttf
+*.otf
+
+__pycache__/
+*.pyc
+.venv/

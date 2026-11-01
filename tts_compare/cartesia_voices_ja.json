@@ -1,0 +1,4733 @@
+[
+ {
+  "id": "7ca2afba-a719-4f06-9af2-ea2b8e3cf14c",
+  "description": "A reliable and organized voice, skillfully conveying important updates and facilitating smooth logistical processes.",
+  "created_at": "2026-08-25T15:10:40.917Z",
+  "language": "ja",
+  "is_owner": false,
+  "status": "active",
+  "gender": "masculine",
+  "country": "JP",
+  "is_pro": false,
+  "name": "Yuto",
+  "tagline": "Logistical Assistant",
+  "access": "public",
+  "visibility": "all",
+  "accents": [
+   {
+    "accent": "standard-japanese",
+    "locale": "ja-JP",
+    "is_native": true
+   }
+  ]
+ },
+ {
+  "id": "aa3ccc4a-cfd8-405c-acf5-1873a527b006",
+  "description": "Delivers messages with a polished, articulate tone, perfect for corporate presentations and formal interactions.",
+  "created_at": "2026-08-04T20:21:02.796Z",
+  "language": "ja",
+  "is_owner": false,
+  "status": "active",
+  "gender": "masculine",
+  "country": "JP",
+  "is_pro": false,
+  "name": "Naoki",
+  "tagline": "Polished Professional",
+  "access": "public",
+  "visibility": "all",
+  "accents": [
+   {
+    "accent": "standard-japanese",
+    "locale": "ja-JP",
+    "is_native": true
+   }
+  ]
+ },
+ {
+  "id": "cb21b4af-0e46-44f7-9128-51be7f898311",
+  "description": "Offers meticulous explanations with a steady and reassuring tone, ideal for clarifying complex information.",
+  "created_at": "2026-08-24T22:02:42.699Z",
+  "language": "ja",
+  "is_owner": false,
+  "status": "active",
+  "gender": "feminine",
+  "country": "JP",
+  "is_pro": false,
+  "name": "Yuzuki",
+  "tagline": "Composed Explainer",
+  "access": "public",
+  "visibility": "all",
+  "accents": [
+   {
+    "accent": "standard-japanese",
+    "locale": "ja-JP",
+    "is_native": true
+   }
+  ]
+ },
+ {
+  "id": "498e7f37-7fa3-4e2c-b8e2-8b6e9276f956",
+  "description": "Calm and composed voice for clear, conversational interactions",
+  "created_at": "2025-12-22T17:36:47.106Z",
+  "language": "ja",
+  "is_owner": false,
+  "status": "active",
+  "gender": "feminine",
+  "country": "JP",
+  "is_pro": false,
+  "name": "Aiko",
+  "tagline": "Calming Voice",
+  "access": "public",
+  "visibility": "all",
+  "accents": [
+   {
+    "accent": "standard-japanese",
+    "locale": "ja-JP",
+    "is_native": true
+   }
+  ]
+ },
+ {
+  "id": "579dc63a-1c19-4512-866a-1295dff18f0f",
+  "description": "This voice offers precise and reassuring information with a composed, articulate delivery, ideal for customer interactions.",
+  "created_at": "2026-08-04T20:37:57.321Z",
+  "language": "ja",
+  "is_owner": false,
+  "status": "active",
+  "gender": "feminine",
+  "country": "JP",
+  "is_pro": false,
+  "name": "Sakura",
+  "tagline": "Precise Host",
+  "access": "public",
+  "visibility": "all",
+  "accents": [
+   {
+    "accent": "standard-japanese",
+    "locale": "ja-JP",
+    "is_native": true
+   }
+  ]
+ },
+ {
+  "id": "861213b7-f057-45c8-9527-0f4c144f1a03",
+  "description": "Clear, polite Japanese female for welcoming customer assistance.",
+  "created_at": "2026-02-20T21:46:39.906Z",
+  "language": "ja",
+  "is_owner": false,
+  "status": "active",
+  "gender": "feminine",
+  "country": "JP",
+  "is_pro": false,
+  "name": "Haruka",
+  "tagline": "Gracious Guide",
+  "access": "public",
+  "visibility": "all",
+  "accents": [
+   {
+    "accent": "standard-japanese",
+    "locale": "ja-JP",
+    "is_native": true
+   }
+  ]
+ },
+ {
+  "id": "33658a29-5982-44c5-9114-0b2c31e100b4",
+  "description": "A professional and reassuring voice, offering clear resolutions and trusted assistance in service interactions.",
+  "created_at": "2026-08-18T17:20:51.015Z",
+  "language": "ja",
+  "is_owner": false,
+  "status": "active",
+  "gender": "masculine",
+  "country": "JP",
+  "is_pro": false,
+  "name": "Kyo",
+  "tagline": "Service Lead",
+  "access": "public",
+  "visibility": "all",
+  "accents": [
+   {
+    "accent": "standard-japanese",
+    "locale": "ja-JP",
+    "is_native": true
+   }
+  ]
+ },
+ {
+  "id": "14c639be-eccb-447c-949e-112bd6dd326a",
+  "description": "An articulate and engaging voice, ideal for professional presentations, instructional content, and clear explanations.",
+  "created_at": "2026-08-11T00:21:16.474Z",
+  "language": "ja",
+  "is_owner": false,
+  "status": "active",
+  "gender": "masculine",
+  "country": "JP",
+  "is_pro": false,
+  "name": "Ryota",
+  "tagline": "Clear Lead",
+  "access": "public",
+  "visibility": "all",
+  "accents": [
+   {
+    "accent": "standard-japanese",
+    "locale": "ja-JP",
+    "is_native": true
+   }
+  ]
+ },
+ {
+  "id": "47c38ca4-5f35-497b-b1a3-415245fb35e1",
+  "description": "Clear, crisp male voice for digital assistants and system interactions",
+  "created_at": "2025-12-16T22:06:00.423Z",
+  "language": "en",
+  "is_owner": false,
+  "status": "active",
+  "gender": "masculine",
+  "country": "US",
+  "is_pro": false,
+  "name": "Daniel",
+  "tagline": "Modern Assistant",
+  "access": "public",
+  "visibility": "all",
+  "accents": [
+   {
+    "accent": "general-american",
+    "locale": "en-US",
+    "is_native": true
+   },
+   {
+    "accent": "standard-hindi",
+    "locale": "hi-IN",
+    "is_native": false
+   },
+   {
+    "accent": "castilian",
+    "locale": "es-ES",
+    "is_native": false
+   },
+   {
+    "accent": "mexican",
+    "locale": "es-MX",
+    "is_native": false
+   },
+   {
+    "accent": "modern-standard-arabic",
+    "locale": "ar-SA",
+    "is_native": false
+   },
+   {
+    "accent": "standard-german",
+    "locale": "de-DE",
+    "is_native": false
+   },
+   {
+    "accent": "canadian-french",
+    "locale": "fr-CA",
+    "is_native": false
+   },
+   {
+    "accent": "parisian",
+    "locale": "fr-FR",
+    "is_native": false
+   },
+   {
+    "accent": "israeli",
+    "locale": "he-IL",
+    "is_native": false
+   },
+   {
+    "accent": "standard-italian",
+    "locale": "it-IT",
+    "is_native": false
+   },
+   {
+    "accent": "standard-japanese",
+    "locale": "ja-JP",
+    "is_native": false
+   },
+   {
+    "accent": "southern-karnataka",
+    "locale": "kn-IN",
+    "is_native": false
+   },
+   {
+    "accent": "korean",
+    "locale": "ko-KR",
+    "is_native": false
+   },
+   {
+    "accent": "konkani",
+    "locale": "mr-IN",
+    "is_native": false
+   },
+   {
+    "accent": "odia",
+    "locale": "or-IN",
+    "is_native": false
+   },
+   {
+    "accent": "brazilian-portuguese",
+    "locale": "pt-BR",
+    "is_native": false
+   },
+   {
+    "accent": "central-tamil",
+    "locale": "ta-IN",
+    "is_native": false
+   },
+   {
+    "accent": "telangana",
+    "locale": "te-IN",
+    "is_native": false
+   },
+   {
+    "accent": "central-thai",
+    "locale": "th-TH",
+    "is_native": false
+   },
+   {
+    "accent": "manila",
+    "locale": "tl-PH",
+    "is_native": false
+   },
+   {
+    "accent": "urdu",
+    "locale": "ur-PK",
+    "is_native": false
+   },
+   {
+    "accent": "mandarin",
+    "locale": "zh-CN",
+    "is_native": false
+   },
+   {
+    "accent": "taiwanese-mandarin",
+    "locale": "zh-TW",
+    "is_native": false
+   }
+  ]
+ },
+ {
+  "id": "30894953-bcce-41fe-892c-15ce19c843ff",
+  "description": "Casual, supportive warmth for friendly conversational flows and approachable check-ins.",
+  "created_at": "2026-05-15T00:04:13.906Z",
+  "language": "en",
+  "is_owner": false,
+  "status": "active",
+  "gender": "masculine",
+  "country": "US",
+  "is_pro": false,
+  "name": "Parker",
+  "tagline": "Supportive Pal",
+  "access": "public",
+  "visibility": "all",
+  "accents": [
+   {
+    "accent": "general-american",
+    "locale": "en-US",
+    "is_native": true
+   },
+   {
+    "accent": "standard-hindi",
+    "locale": "hi-IN",
+    "is_native": false
+   },
+   {
+    "accent": "mexican",
+    "locale": "es-MX",
+    "is_native": false
+   },
+   {
+    "accent": "standard-german",
+    "locale": "de-DE",
+    "is_native": false
+   },
+   {
+    "accent": "canadian-french",
+    "locale": "fr-CA",
+    "is_native": false
+   },
+   {
+    "accent": "standard-italian",
+    "locale": "it-IT",
+    "is_native": false
+   },
+   {
+    "accent": "standard-japanese",
+    "locale": "ja-JP",
+    "is_native": false
+   },
+   {
+    "accent": "brazilian-portuguese",
+    "locale": "pt-BR",
+    "is_native": false
+   }
+  ]
+ },
+ {
+  "id": "ef191366-f52f-447a-a398-ed8c0f2943a1",
+  "description": "Warm, conversational British male for casual and engaging dialogue.",
+  "created_at": "2026-05-11T10:17:04.846Z",
+  "language": "en",
+  "is_owner": false,
+  "status": "active",
+  "gender": "masculine",
+  "country": "GB",
+  "is_pro": false,
+  "name": "Archie",
+  "tagline": "Approachable Mate",
+  "access": "public",
+  "visibility": "all",
+  "accents": [
+   {
+    "accent": "british",
+    "locale": "en-GB",
+    "is_native": true
+   },
+   {
+    "accent": "general-american",
+    "locale": "en-US",
+    "is_native": false
+   },
+   {
+    "accent": "standard-hindi",
+    "locale": "hi-IN",
+    "is_native": false
+   },
+   {
+    "accent": "castilian",
+    "locale": "es-ES",
+    "is_native": false
+   },
+   {
+    "accent": "modern-standard-arabic",
+    "locale": "ar-SA",
+    "is_native": false
+   },
+   {
+    "accent": "bulgarian",
+    "locale": "bg-BG",
+    "is_native": false
+   },
+   {
+    "accent": "standard-german",
+    "locale": "de-DE",
+    "is_native": false
+   },
+   {
+    "accent": "canadian-french",
+    "locale": "fr-CA",
+    "is_native": false
+   },
+   {
+    "accent": "parisian",
+    "locale": "fr-FR",
+    "is_native": false
+   },
+   {
+    "accent": "israeli",
+    "locale": "he-IL",
+    "is_native": false
+   },
+   {
+    "accent": "standard-italian",
+    "locale": "it-IT",
+    "is_native": false
+   },
+   {
+    "accent": "standard-japanese",
+    "locale": "ja-JP",
+    "is_native": false
+   },
+   {
+    "accent": "southern-karnataka",
+    "locale": "kn-IN",
+    "is_native": false
+   },
+   {
+    "accent": "korean",
+    "locale": "ko-KR",
+    "is_native": false
+   },
+   {
+    "accent": "konkani",
+    "locale": "mr-IN",
+    "is_native": false
+   },
+   {
+    "accent": "oslo",
+    "locale": "no-NO",
+    "is_native": false
+   },
+   {
+    "accent": "odia",
+    "locale": "or-IN",
+    "is_native": false
+   },
+   {
+    "accent": "brazilian-portuguese",
+    "locale": "pt-BR",
+    "is_native": false
+   },
+   {
+    "accent": "central-tamil",
+    "locale": "ta-IN",
+    "is_native": false
+   },
+   {
+    "accent": "telangana",
+    "locale": "te-IN",
+    "is_native": false
+   },
+   {
+    "accent": "central-thai",
+    "locale": "th-TH",
+    "is_native": false
+   },
+   {
+    "accent": "manila",
+    "locale": "tl-PH",
+    "is_native": false
+   },
+   {
+    "accent": "urdu",
+    "locale": "ur-PK",
+    "is_native": false
+   },
+   {
+    "accent": "mandarin",
+    "locale": "zh-CN",
+    "is_native": false
+   },
+   {
+    "accent": "taiwanese-mandarin",
+    "locale": "zh-TW",
+    "is_native": false
+   }
+  ]
+ },
+ {
+  "id": "a33f7a4c-100f-41cf-a1fd-5822e8fc253f",
+  "description": "Expressive female voice for narration, storytelling, and creative content",
+  "created_at": "2025-12-16T18:14:42.582Z",
+  "language": "en",
+  "is_owner": false,
+  "status": "active",
+  "gender": "feminine",
+  "country": "US",
+  "is_pro": false,
+  "name": "Lauren",
+  "tagline": "Lively Narrator",
+  "access": "public",
+  "visibility": "all",
+  "accents": [
+   {
+    "accent": "general-american",
+    "locale": "en-US",
+    "is_native": true
+   },
+   {
+    "accent": "australian",
+    "locale": "en-AU",
+    "is_native": false
+   },
+   {
+    "accent": "british",
+    "locale": "en-GB",
+    "is_native": false
+   },
+   {
+    "accent": "mexican",
+    "locale": "es-MX",
+    "is_native": false
+   },
+   {
+    "accent": "standard-japanese",
+    "locale": "ja-JP",
+    "is_native": false
+   },
+   {
+    "accent": "brazilian-portuguese",
+    "locale": "pt-BR",
+    "is_native": false
+   }
+  ]
+ },
+ {
+  "id": "a5136bf9-224c-4d76-b823-52bd5efcffcc",
+  "description": "Friendly, laid-back male voice for customer support and onboarding",
+  "created_at": "2025-12-15T20:39:35.396Z",
+  "language": "en",
+  "is_owner": false,
+  "status": "active",
+  "gender": "masculine",
+  "country": "US",
+  "is_pro": false,
+  "name": "Jameson",
+  "tagline": "Easygoing Support",
+  "access": "public",
+  "visibility": "all",
+  "accents": [
+   {
+    "accent": "general-american",
+    "locale": "en-US",
+    "is_native": true
+   },
+   {
+    "accent": "standard-hindi",
+    "locale": "hi-IN",
+    "is_native": false
+   },
+   {
+    "accent": "castilian",
+    "locale": "es-ES",
+    "is_native": false
+   },
+   {
+    "accent": "mexican",
+    "locale": "es-MX",
+    "is_native": false
+   },
+   {
+    "accent": "modern-standard-arabic",
+    "locale": "ar-SA",
+    "is_native": false
+   },
+   {
+    "accent": "standard-german",
+    "locale": "de-DE",
+    "is_native": false
+   },
+   {
+    "accent": "canadian-french",
+    "locale": "fr-CA",
+    "is_native": false
+   },
+   {
+    "accent": "parisian",
+    "locale": "fr-FR",
+    "is_native": false
+   },
+   {
+    "accent": "israeli",
+    "locale": "he-IL",
+    "is_native": false
+   },
+   {
+    "accent": "standard-italian",
+    "locale": "it-IT",
+    "is_native": false
+   },
+   {
+    "accent": "standard-japanese",
+    "locale": "ja-JP",
+    "is_native": false
+   },
+   {
+    "accent": "southern-karnataka",
+    "locale": "kn-IN",
+    "is_native": false
+   },
+   {
+    "accent": "korean",
+    "locale": "ko-KR",
+    "is_native": false
+   },
+   {
+    "accent": "konkani",
+    "locale": "mr-IN",
+    "is_native": false
+   },
+   {
+    "accent": "odia",
+    "locale": "or-IN",
+    "is_native": false
+   },
+   {
+    "accent": "brazilian-portuguese",
+    "locale": "pt-BR",
+    "is_native": false
+   },
+   {
+    "accent": "central-tamil",
+    "locale": "ta-IN",
+    "is_native": false
+   },
+   {
+    "accent": "telangana",
+    "locale": "te-IN",
+    "is_native": false
+   },
+   {
+    "accent": "central-thai",
+    "locale": "th-TH",
+    "is_native": false
+   },
+   {
+    "accent": "manila",
+    "locale": "tl-PH",
+    "is_native": false
+   },
+   {
+    "accent": "urdu",
+    "locale": "ur-PK",
+    "is_native": false
+   },
+   {
+    "accent": "mandarin",
+    "locale": "zh-CN",
+    "is_native": false
+   }
+  ]
+ },
+ {
+  "id": "5ee9feff-1265-424a-9d7f-8e4d431a12c7",
+  "description": "Intense, deep young adult male for casual conversations",
+  "created_at": "2025-03-31T18:28:21.946Z",
+  "language": "en",
+  "is_owner": false,
+  "status": "active",
+  "gender": "masculine",
+  "country": "US",
+  "is_pro": false,
+  "name": "Ronald",
+  "tagline": "Thinker",
+  "access": "public",
+  "visibility": "all",
+  "accents": [
+   {
+    "accent": "general-american",
+    "locale": "en-US",
+    "is_native": true
+   },
+   {
+    "accent": "standard-hindi",
+    "locale": "hi-IN",
+    "is_native": false
+   },
+   {
+    "accent": "mexican",
+    "locale": "es-MX",
+    "is_native": false
+   },
+   {
+    "accent": "standard-german",
+    "locale": "de-DE",
+    "is_native": false
+   },
+   {
+    "accent": "canadian-french",
+    "locale": "fr-CA",
+    "is_native": false
+   },
+   {
+    "accent": "standard-italian",
+    "locale": "it-IT",
+    "is_native": false
+   },
+   {
+    "accent": "standard-japanese",
+    "locale": "ja-JP",
+    "is_native": false
+   },
+   {
+    "accent": "brazilian-portuguese",
+    "locale": "pt-BR",
+    "is_native": false
+   },
+   {
+    "accent": "mandarin",
+    "locale": "zh-CN",
+    "is_native": false
+   }
+  ]
+ },
+ {
+  "id": "87286a8d-7ea7-4235-a41a-dd9fa6630feb",
+  "description": "A relaxed, youthful male voice with a monotone, matter-of-fact attitude - ideal for casual, straightforward conversations.",
+  "created_at": "2025-12-12T00:59:31.912Z",
+  "language": "en",
+  "is_owner": false,
+  "status": "active",
+  "gender": "masculine",
+  "country": "US",
+  "is_pro": false,
+  "name": "Henry",
+  "tagline": "Plainspoken Guy",
+  "access": "public",
+  "visibility": "all",
+  "accents": [
+   {
+    "accent": "general-american",
+    "locale": "en-US",
+    "is_native": true
+   },
+   {
+    "accent": "british",
+    "locale": "en-GB",
+    "is_native": false
+   },
+   {
+    "accent": "standard-hindi",
+    "locale": "hi-IN",
+    "is_native": false
+   },
+   {
+    "accent": "castilian",
+    "locale": "es-ES",
+    "is_native": false
+   },
+   {
+    "accent": "mexican",
+    "locale": "es-MX",
+    "is_native": false
+   },
+   {
+    "accent": "modern-standard-arabic",
+    "locale": "ar-SA",
+    "is_native": false
+   },
+   {
+    "accent": "bulgarian",
+    "locale": "bg-BG",
+    "is_native": false
+   },
+   {
+    "accent": "standard-german",
+    "locale": "de-DE",
+    "is_native": false
+   },
+   {
+    "accent": "canadian-french",
+    "locale": "fr-CA",
+    "is_native": false
+   },
+   {
+    "accent": "parisian",
+    "locale": "fr-FR",
+    "is_native": false
+   },
+   {
+    "accent": "israeli",
+    "locale": "he-IL",
+    "is_native": false
+   },
+   {
+    "accent": "standard-italian",
+    "locale": "it-IT",
+    "is_native": false
+   },
+   {
+    "accent": "standard-japanese",
+    "locale": "ja-JP",
+    "is_native": false
+   },
+   {
+    "accent": "southern-karnataka",
+    "locale": "kn-IN",
+    "is_native": false
+   },
+   {
+    "accent": "korean",
+    "locale": "ko-KR",
+    "is_native": false
+   },
+   {
+    "accent": "konkani",
+    "locale": "mr-IN",
+    "is_native": false
+   },
+   {
+    "accent": "oslo",
+    "locale": "no-NO",
+    "is_native": false
+   },
+   {
+    "accent": "odia",
+    "locale": "or-IN",
+    "is_native": false
+   },
+   {
+    "accent": "brazilian-portuguese",
+    "locale": "pt-BR",
+    "is_native": false
+   },
+   {
+    "accent": "central-tamil",
+    "locale": "ta-IN",
+    "is_native": false
+   },
+   {
+    "accent": "telangana",
+    "locale": "te-IN",
+    "is_native": false
+   },
+   {
+    "accent": "central-thai",
+    "locale": "th-TH",
+    "is_native": false
+   },
+   {
+    "accent": "urdu",
+    "locale": "ur-PK",
+    "is_native": false
+   },
+   {
+    "accent": "mandarin",
+    "locale": "zh-CN",
+    "is_native": false
+   },
+   {
+    "accent": "taiwanese-mandarin",
+    "locale": "zh-TW",
+    "is_native": false
+   }
+  ]
+ },
+ {
+  "id": "86e30c1d-714b-4074-a1f2-1cb6b552fb49",
+  "description": "Friendly young adult male for customer support conversations",
+  "created_at": "2025-05-05T22:12:55.392Z",
+  "language": "en",
+  "is_owner": false,
+  "status": "active",
+  "gender": "masculine",
+  "country": "US",
+  "is_pro": false,
+  "name": "Carson",
+  "tagline": "Curious Conversationalist",
+  "access": "public",
+  "visibility": "all",
+  "accents": [
+   {
+    "accent": "general-american",
+    "locale": "en-US",
+    "is_native": true
+   },
+   {
+    "accent": "british",
+    "locale": "en-GB",
+    "is_native": false
+   },
+   {
+    "accent": "standard-hindi",
+    "locale": "hi-IN",
+    "is_native": false
+   },
+   {
+    "accent": "castilian",
+    "locale": "es-ES",
+    "is_native": false
+   },
+   {
+    "accent": "mexican",
+    "locale": "es-MX",
+    "is_native": false
+   },
+   {
+    "accent": "modern-standard-arabic",
+    "locale": "ar-SA",
+    "is_native": false
+   },
+   {
+    "accent": "bulgarian",
+    "locale": "bg-BG",
+    "is_native": false
+   },
+   {
+    "accent": "standard-german",
+    "locale": "de-DE",
+    "is_native": false
+   },
+   {
+    "accent": "canadian-french",
+    "locale": "fr-CA",
+    "is_native": false
+   },
+   {
+    "accent": "parisian",
+    "locale": "fr-FR",
+    "is_native": false
+   },
+   {
+    "accent": "israeli",
+    "locale": "he-IL",
+    "is_native": false
+   },
+   {
+    "accent": "standard-italian",
+    "locale": "it-IT",
+    "is_native": false
+   },
+   {
+    "accent": "standard-japanese",
+    "locale": "ja-JP",
+    "is_native": false
+   },
+   {
+    "accent": "southern-karnataka",
+    "locale": "kn-IN",
+    "is_native": false
+   },
+   {
+    "accent": "korean",
+    "locale": "ko-KR",
+    "is_native": false
+   },
+   {
+    "accent": "north-kerala",
+    "locale": "ml-IN",
+    "is_native": false
+   },
+   {
+    "accent": "konkani",
+    "locale": "mr-IN",
+    "is_native": false
+   },
+   {
+    "accent": "oslo",
+    "locale": "no-NO",
+    "is_native": false
+   },
+   {
+    "accent": "odia",
+    "locale": "or-IN",
+    "is_native": false
+   },
+   {
+    "accent": "brazilian-portuguese",
+    "locale": "pt-BR",
+    "is_native": false
+   },
+   {
+    "accent": "central-tamil",
+    "locale": "ta-IN",
+    "is_native": false
+   },
+   {
+    "accent": "telangana",
+    "locale": "te-IN",
+    "is_native": false
+   },
+   {
+    "accent": "central-thai",
+    "locale": "th-TH",
+    "is_native": false
+   },
+   {
+    "accent": "urdu",
+    "locale": "ur-PK",
+    "is_native": false
+   },
+   {
+    "accent": "mandarin",
+    "locale": "zh-CN",
+    "is_native": false
+   },
+   {
+    "accent": "taiwanese-mandarin",
+    "locale": "zh-TW",
+    "is_native": false
+   }
+  ]
+ },
+ {
+  "id": "4877b818-c7fe-4c89-b1cf-eadf8e23da72",
+  "description": "Clear, measured Hindi male suited for corporate communication.",
+  "created_at": "2026-03-25T23:01:58.577Z",
+  "language": "hi",
+  "is_owner": false,
+  "status": "active",
+  "gender": "masculine",
+  "country": "IN",
+  "is_pro": false,
+  "name": "Rohan",
+  "tagline": "Steady Communicator",
+  "access": "public",
+  "visibility": "all",
+  "accents": [
+   {
+    "accent": "standard-hindi",
+    "locale": "hi-IN",
+    "is_native": true
+   },
+   {
+    "accent": "british",
+    "locale": "en-GB",
+    "is_native": false
+   },
+   {
+    "accent": "general-american",
+    "locale": "en-US",
+    "is_native": false
+   },
+   {
+    "accent": "castilian",
+    "locale": "es-ES",
+    "is_native": false
+   },
+   {
+    "accent": "mexican",
+    "locale": "es-MX",
+    "is_native": false
+   },
+   {
+    "accent": "modern-standard-arabic",
+    "locale": "ar-SA",
+    "is_native": false
+   },
+   {
+    "accent": "bulgarian",
+    "locale": "bg-BG",
+    "is_native": false
+   },
+   {
+    "accent": "standard-german",
+    "locale": "de-DE",
+    "is_native": false
+   },
+   {
+    "accent": "canadian-french",
+    "locale": "fr-CA",
+    "is_native": false
+   },
+   {
+    "accent": "parisian",
+    "locale": "fr-FR",
+    "is_native": false
+   },
+   {
+    "accent": "israeli",
+    "locale": "he-IL",
+    "is_native": false
+   },
+   {
+    "accent": "standard-italian",
+    "locale": "it-IT",
+    "is_native": false
+   },
+   {
+    "accent": "standard-japanese",
+    "locale": "ja-JP",
+    "is_native": false
+   },
+   {
+    "accent": "southern-karnataka",
+    "locale": "kn-IN",
+    "is_native": false
+   },
+   {
+    "accent": "korean",
+    "locale": "ko-KR",
+    "is_native": false
+   },
+   {
+    "accent": "north-kerala",
+    "locale": "ml-IN",
+    "is_native": false
+   },
+   {
+    "accent": "konkani",
+    "locale": "mr-IN",
+    "is_native": false
+   },
+   {
+    "accent": "oslo",
+    "locale": "no-NO",
+    "is_native": false
+   },
+   {
+    "accent": "odia",
+    "locale": "or-IN",
+    "is_native": false
+   },
+   {
+    "accent": "brazilian-portuguese",
+    "locale": "pt-BR",
+    "is_native": false
+   },
+   {
+    "accent": "central-tamil",
+    "locale": "ta-IN",
+    "is_native": false
+   },
+   {
+    "accent": "telangana",
+    "locale": "te-IN",
+    "is_native": false
+   },
+   {
+    "accent": "central-thai",
+    "locale": "th-TH",
+    "is_native": false
+   },
+   {
+    "accent": "manila",
+    "locale": "tl-PH",
+    "is_native": false
+   },
+   {
+    "accent": "urdu",
+    "locale": "ur-PK",
+    "is_native": false
+   },
+   {
+    "accent": "mandarin",
+    "locale": "zh-CN",
+    "is_native": false
+   },
+   {
+    "accent": "taiwanese-mandarin",
+    "locale": "zh-TW",
+    "is_native": false
+   }
+  ]
+ },
+ {
+  "id": "b7187e84-fe22-4344-ba4a-bc013fcb533e",
+  "description": "Warm male for audiobooks and clear communication",
+  "created_at": "1970-04-18T00:06:00.000Z",
+  "language": "de",
+  "is_owner": false,
+  "status": "active",
+  "gender": "masculine",
+  "country": "DE",
+  "is_pro": false,
+  "name": "Sebastian",
+  "tagline": "Orator",
+  "access": "public",
+  "visibility": "all",
+  "accents": [
+   {
+    "accent": "standard-german",
+    "locale": "de-DE",
+    "is_native": true
+   },
+   {
+    "accent": "british",
+    "locale": "en-GB",
+    "is_native": false
+   },
+   {
+    "accent": "general-american",
+    "locale": "en-US",
+    "is_native": false
+   },
+   {
+    "accent": "standard-hindi",
+    "locale": "hi-IN",
+    "is_native": false
+   },
+   {
+    "accent": "castilian",
+    "locale": "es-ES",
+    "is_native": false
+   },
+   {
+    "accent": "mexican",
+    "locale": "es-MX",
+    "is_native": false
+   },
+   {
+    "accent": "modern-standard-arabic",
+    "locale": "ar-SA",
+    "is_native": false
+   },
+   {
+    "accent": "bulgarian",
+    "locale": "bg-BG",
+    "is_native": false
+   },
+   {
+    "accent": "canadian-french",
+    "locale": "fr-CA",
+    "is_native": false
+   },
+   {
+    "accent": "parisian",
+    "locale": "fr-FR",
+    "is_native": false
+   },
+   {
+    "accent": "israeli",
+    "locale": "he-IL",
+    "is_native": false
+   },
+   {
+    "accent": "standard-italian",
+    "locale": "it-IT",
+    "is_native": false
+   },
+   {
+    "accent": "standard-japanese",
+    "locale": "ja-JP",
+    "is_native": false
+   },
+   {
+    "accent": "korean",
+    "locale": "ko-KR",
+    "is_native": false
+   },
+   {
+    "accent": "north-kerala",
+    "locale": "ml-IN",
+    "is_native": false
+   },
+   {
+    "accent": "konkani",
+    "locale": "mr-IN",
+    "is_native": false
+   },
+   {
+    "accent": "oslo",
+    "locale": "no-NO",
+    "is_native": false
+   },
+   {
+    "accent": "odia",
+    "locale": "or-IN",
+    "is_native": false
+   },
+   {
+    "accent": "brazilian-portuguese",
+    "locale": "pt-BR",
+    "is_native": false
+   },
+   {
+    "accent": "central-tamil",
+    "locale": "ta-IN",
+    "is_native": false
+   },
+   {
+    "accent": "telangana",
+    "locale": "te-IN",
+    "is_native": false
+   },
+   {
+    "accent": "central-thai",
+    "locale": "th-TH",
+    "is_native": false
+   },
+   {
+    "accent": "manila",
+    "locale": "tl-PH",
+    "is_native": false
+   },
+   {
+    "accent": "urdu",
+    "locale": "ur-PK",
+    "is_native": false
+   },
+   {
+    "accent": "mandarin",
+    "locale": "zh-CN",
+    "is_native": false
+   },
+   {
+    "accent": "taiwanese-mandarin",
+    "locale": "zh-TW",
+    "is_native": false
+   }
+  ]
+ },
+ {
+  "id": "ae823354-f9be-4aef-8543-f569644136b4",
+  "description": "Motherly voice with a calm, nurturing tone",
+  "created_at": "2026-01-28T21:54:03.221Z",
+  "language": "es",
+  "is_owner": false,
+  "status": "active",
+  "gender": "feminine",
+  "country": "CO",
+  "is_pro": false,
+  "name": "Mariana",
+  "tagline": "Nurturing Guide",
+  "access": "public",
+  "visibility": "all",
+  "accents": [
+   {
+    "accent": "colombian",
+    "locale": "es-CO",
+    "is_native": true
+   },
+   {
+    "accent": "british",
+    "locale": "en-GB",
+    "is_native": false
+   },
+   {
+    "accent": "general-american",
+    "locale": "en-US",
+    "is_native": false
+   },
+   {
+    "accent": "standard-hindi",
+    "locale": "hi-IN",
+    "is_native": false
+   },
+   {
+    "accent": "castilian",
+    "locale": "es-ES",
+    "is_native": false
+   },
+   {
+    "accent": "modern-standard-arabic",
+    "locale": "ar-SA",
+    "is_native": false
+   },
+   {
+    "accent": "bulgarian",
+    "locale": "bg-BG",
+    "is_native": false
+   },
+   {
+    "accent": "standard-german",
+    "locale": "de-DE",
+    "is_native": false
+   },
+   {
+    "accent": "canadian-french",
+    "locale": "fr-CA",
+    "is_native": false
+   },
+   {
+    "accent": "parisian",
+    "locale": "fr-FR",
+    "is_native": false
+   },
+   {
+    "accent": "israeli",
+    "locale": "he-IL",
+    "is_native": false
+   },
+   {
+    "accent": "standard-italian",
+    "locale": "it-IT",
+    "is_native": false
+   },
+   {
+    "accent": "standard-japanese",
+    "locale": "ja-JP",
+    "is_native": false
+   },
+   {
+    "accent": "southern-karnataka",
+    "locale": "kn-IN",
+    "is_native": false
+   },
+   {
+    "accent": "korean",
+    "locale": "ko-KR",
+    "is_native": false
+   },
+   {
+    "accent": "north-kerala",
+    "locale": "ml-IN",
+    "is_native": false
+   },
+   {
+    "accent": "konkani",
+    "locale": "mr-IN",
+    "is_native": false
+   },
+   {
+    "accent": "oslo",
+    "locale": "no-NO",
+    "is_native": false
+   },
+   {
+    "accent": "odia",
+    "locale": "or-IN",
+    "is_native": false
+   },
+   {
+    "accent": "brazilian-portuguese",
+    "locale": "pt-BR",
+    "is_native": false
+   },
+   {
+    "accent": "central-tamil",
+    "locale": "ta-IN",
+    "is_native": false
+   },
+   {
+    "accent": "telangana",
+    "locale": "te-IN",
+    "is_native": false
+   },
+   {
+    "accent": "central-thai",
+    "locale": "th-TH",
+    "is_native": false
+   },
+   {
+    "accent": "manila",
+    "locale": "tl-PH",
+    "is_native": false
+   },
+   {
+    "accent": "urdu",
+    "locale": "ur-PK",
+    "is_native": false
+   },
+   {
+    "accent": "mandarin",
+    "locale": "zh-CN",
+    "is_native": false
+   }
+  ]
+ },
+ {
+  "id": "6303e5fb-a0a7-48f9-bb1a-dd42c216dc5d",
+  "description": "Energetic adult male for engaging customer support and conversations",
+  "created_at": "2025-11-04T22:21:58.917Z",
+  "language": "hi",
+  "is_owner": false,
+  "status": "active",
+  "gender": "masculine",
+  "country": "IN",
+  "is_pro": false,
+  "name": "Sagar",
+  "tagline": "Helpful Friend",
+  "access": "public",
+  "visibility": "all",
+  "accents": [
+   {
+    "accent": "standard-hindi",
+    "locale": "hi-IN",
+    "is_native": true
+   },
+   {
+    "accent": "british",
+    "locale": "en-GB",
+    "is_native": false
+   },
+   {
+    "accent": "general-american",
+    "locale": "en-US",
+    "is_native": false
+   },
+   {
+    "accent": "castilian",
+    "locale": "es-ES",
+    "is_native": false
+   },
+   {
+    "accent": "mexican",
+    "locale": "es-MX",
+    "is_native": false
+   },
+   {
+    "accent": "modern-standard-arabic",
+    "locale": "ar-SA",
+    "is_native": false
+   },
+   {
+    "accent": "bulgarian",
+    "locale": "bg-BG",
+    "is_native": false
+   },
+   {
+    "accent": "standard-german",
+    "locale": "de-DE",
+    "is_native": false
+   },
+   {
+    "accent": "canadian-french",
+    "locale": "fr-CA",
+    "is_native": false
+   },
+   {
+    "accent": "parisian",
+    "locale": "fr-FR",
+    "is_native": false
+   },
+   {
+    "accent": "israeli",
+    "locale": "he-IL",
+    "is_native": false
+   },
+   {
+    "accent": "standard-italian",
+    "locale": "it-IT",
+    "is_native": false
+   },
+   {
+    "accent": "standard-japanese",
+    "locale": "ja-JP",
+    "is_native": false
+   },
+   {
+    "accent": "southern-karnataka",
+    "locale": "kn-IN",
+    "is_native": false
+   },
+   {
+    "accent": "korean",
+    "locale": "ko-KR",
+    "is_native": false
+   },
+   {
+    "accent": "north-kerala",
+    "locale": "ml-IN",
+    "is_native": false
+   },
+   {
+    "accent": "konkani",
+    "locale": "mr-IN",
+    "is_native": false
+   },
+   {
+    "accent": "oslo",
+    "locale": "no-NO",
+    "is_native": false
+   },
+   {
+    "accent": "odia",
+    "locale": "or-IN",
+    "is_native": false
+   },
+   {
+    "accent": "brazilian-portuguese",
+    "locale": "pt-BR",
+    "is_native": false
+   },
+   {
+    "accent": "central-tamil",
+    "locale": "ta-IN",
+    "is_native": false
+   },
+   {
+    "accent": "telangana",
+    "locale": "te-IN",
+    "is_native": false
+   },
+   {
+    "accent": "central-thai",
+    "locale": "th-TH",
+    "is_native": false
+   },
+   {
+    "accent": "manila",
+    "locale": "tl-PH",
+    "is_native": false
+   },
+   {
+    "accent": "urdu",
+    "locale": "ur-PK",
+    "is_native": false
+   },
+   {
+    "accent": "mandarin",
+    "locale": "zh-CN",
+    "is_native": false
+   },
+   {
+    "accent": "taiwanese-mandarin",
+    "locale": "zh-TW",
+    "is_native": false
+   }
+  ]
+ },
+ {
+  "id": "e7296ced-7f95-49fa-9ece-5852c15f58ff",
+  "description": "Delivers complex information with a systematic and composed approach, ensuring every detail is clearly conveyed.",
+  "created_at": "2026-08-25T15:11:39.598Z",
+  "language": "ja",
+  "is_owner": false,
+  "status": "active",
+  "gender": "feminine",
+  "country": "JP",
+  "is_pro": false,
+  "name": "Yuna",
+  "tagline": "Methodical Narrator",
+  "access": "public",
+  "visibility": "all",
+  "accents": [
+   {
+    "accent": "standard-japanese",
+    "locale": "ja-JP",
+    "is_native": true
+   }
+  ]
+ },
+ {
+  "id": "75599e98-4d9b-4f1a-947f-67495c087091",
+  "description": "Holds consistency across alphanumerics and sales pitches, with the focused feel of a clinic desk.",
+  "created_at": "2026-07-22T19:06:50.327Z",
+  "language": "ja",
+  "is_owner": false,
+  "status": "active",
+  "gender": "feminine",
+  "country": "JP",
+  "is_pro": false,
+  "name": "Keiko",
+  "tagline": "Clinic Desk",
+  "access": "public",
+  "visibility": "all",
+  "accents": [
+   {
+    "accent": "standard-japanese",
+    "locale": "ja-JP",
+    "is_native": true
+   }
+  ]
+ },
+ {
+  "id": "882079ce-8513-4a0e-8c0c-c7b8995b12f4",
+  "description": "Manages inquiries with a poised and clear voice, offering helpful support for transactional interactions.",
+  "created_at": "2026-08-18T17:24:27.845Z",
+  "language": "ja",
+  "is_owner": false,
+  "status": "active",
+  "gender": "feminine",
+  "country": "JP",
+  "is_pro": false,
+  "name": "Aoi",
+  "tagline": "Order Coordinator",
+  "access": "public",
+  "visibility": "all",
+  "accents": [
+   {
+    "accent": "standard-japanese",
+    "locale": "ja-JP",
+    "is_native": true
+   }
+  ]
+ },
+ {
+  "id": "9436e723-612d-4114-aeb0-fa00d4d639bf",
+  "description": "Lively confident male for advertising and announcing",
+  "created_at": "2025-10-27T19:12:20.512Z",
+  "language": "ja",
+  "is_owner": false,
+  "status": "active",
+  "gender": "masculine",
+  "country": "JP",
+  "is_pro": false,
+  "name": "Katsuya",
+  "tagline": "Promo Host",
+  "access": "public",
+  "visibility": "all",
+  "accents": [
+   {
+    "accent": "standard-japanese",
+    "locale": "ja-JP",
+    "is_native": true
+   }
+  ]
+ },
+ {
+  "id": "e63d7d05-76b0-4ff5-b8fb-503a82688bfe",
+  "description": "Offers warm and efficient assistance, expertly guiding listeners through service inquiries with a clear tone.",
+  "created_at": "2026-08-18T17:22:56.451Z",
+  "language": "ja",
+  "is_owner": false,
+  "status": "active",
+  "gender": "feminine",
+  "country": "JP",
+  "is_pro": false,
+  "name": "Miki",
+  "tagline": "Customer Concierge",
+  "access": "public",
+  "visibility": "all",
+  "accents": [
+   {
+    "accent": "standard-japanese",
+    "locale": "ja-JP",
+    "is_native": true
+   }
+  ]
+ },
+ {
+  "id": "295cc815-c869-4a5a-b2b2-a4f2272ffccb",
+  "description": "Delivers intricate information with meticulous clarity, ensuring complete understanding for listeners.",
+  "created_at": "2026-08-18T17:13:42.417Z",
+  "language": "ja",
+  "is_owner": false,
+  "status": "active",
+  "gender": "masculine",
+  "country": "JP",
+  "is_pro": false,
+  "name": "Mio",
+  "tagline": "Precise Explainer",
+  "access": "public",
+  "visibility": "all",
+  "accents": [
+   {
+    "accent": "standard-japanese",
+    "locale": "ja-JP",
+    "is_native": true
+   }
+  ]
+ },
+ {
+  "id": "049de96c-781a-4728-8365-82899c178a43",
+  "description": "A composed and reassuring vocal presence, perfect for delivering instructions or explanations with a steady, trustworthy tone.",
+  "created_at": "2026-08-04T20:40:32.885Z",
+  "language": "ja",
+  "is_owner": false,
+  "status": "active",
+  "gender": "feminine",
+  "country": "JP",
+  "is_pro": false,
+  "name": "Rina",
+  "tagline": "Steady Concierge",
+  "access": "public",
+  "visibility": "all",
+  "accents": [
+   {
+    "accent": "standard-japanese",
+    "locale": "ja-JP",
+    "is_native": true
+   }
+  ]
+ },
+ {
+  "id": "dd610410-2b01-426e-b673-2c69bcf5f93b",
+  "description": "Guides listeners through processes with an organized and methodical approach, ensuring clear understanding.",
+  "created_at": "2026-08-18T17:25:16.633Z",
+  "language": "ja",
+  "is_owner": false,
+  "status": "active",
+  "gender": "feminine",
+  "country": "JP",
+  "is_pro": false,
+  "name": "Yua",
+  "tagline": "Structured Facilitator",
+  "access": "public",
+  "visibility": "all",
+  "accents": [
+   {
+    "accent": "standard-japanese",
+    "locale": "ja-JP",
+    "is_native": true
+   }
+  ]
+ },
+ {
+  "id": "02009efe-320b-43e4-9b2f-8a20153d32c5",
+  "description": "This voice clearly guides listeners through processes, ensuring understanding with a precise and reassuring tone.",
+  "created_at": "2026-08-11T00:25:14.744Z",
+  "language": "ja",
+  "is_owner": false,
+  "status": "active",
+  "gender": "feminine",
+  "country": "JP",
+  "is_pro": false,
+  "name": "Hana",
+  "tagline": "Procedural Verifier",
+  "access": "public",
+  "visibility": "all",
+  "accents": [
+   {
+    "accent": "standard-japanese",
+    "locale": "ja-JP",
+    "is_native": true
+   }
+  ]
+ },
+ {
+  "id": "dd10411e-a9f9-49fd-83bf-199c624352c4",
+  "description": "Delivers presentations with meticulous clarity and professional poise, commanding attention with accuracy.",
+  "created_at": "2026-08-11T00:21:52.453Z",
+  "language": "ja",
+  "is_owner": false,
+  "status": "active",
+  "gender": "feminine",
+  "country": "JP",
+  "is_pro": false,
+  "name": "Yui",
+  "tagline": "Precise Presenter",
+  "access": "public",
+  "visibility": "all",
+  "accents": [
+   {
+    "accent": "standard-japanese",
+    "locale": "ja-JP",
+    "is_native": true
+   }
+  ]
+ },
+ {
+  "id": "a935f15c-4b24-41dd-ba82-b90035720d16",
+  "description": "A calm and clear voice perfect for navigating complex information with reassuring accuracy and professional courtesy.",
+  "created_at": "2026-08-04T20:39:49.745Z",
+  "language": "ja",
+  "is_owner": false,
+  "status": "active",
+  "gender": "masculine",
+  "country": "JP",
+  "is_pro": false,
+  "name": "Kaito",
+  "tagline": "Polite Advisor",
+  "access": "public",
+  "visibility": "all",
+  "accents": [
+   {
+    "accent": "standard-japanese",
+    "locale": "ja-JP",
+    "is_native": true
+   }
+  ]
+ },
+ {
+  "id": "1d210168-d764-462c-8ab6-288a6d5a9579",
+  "description": "Steady Japanese male for clear transactional support.",
+  "created_at": "2026-03-06T01:29:08.390Z",
+  "language": "ja",
+  "is_owner": false,
+  "status": "active",
+  "gender": "masculine",
+  "country": "JP",
+  "is_pro": false,
+  "name": "Hiroshi",
+  "tagline": "Dependable Director",
+  "access": "public",
+  "visibility": "all",
+  "accents": [
+   {
+    "accent": "standard-japanese",
+    "locale": "ja-JP",
+    "is_native": true
+   }
+  ]
+ },
+ {
+  "id": "7f822e9a-d00c-45fe-84e4-d59a3ac664d4",
+  "description": "Offers polite and efficient assistance, smoothly navigating interactions and ensuring a pleasant experience for all listeners.",
+  "created_at": "2026-10-07T16:25:14.210Z",
+  "language": "ja",
+  "is_owner": false,
+  "status": "active",
+  "gender": "feminine",
+  "country": "JP",
+  "is_pro": false,
+  "name": "Hina",
+  "tagline": "Courteous Facilitator",
+  "access": "public",
+  "visibility": "all",
+  "accents": [
+   {
+    "accent": "standard-japanese",
+    "locale": "ja-JP",
+    "is_native": true
+   }
+  ]
+ },
+ {
+  "id": "63d6f469-8c2c-489d-b53f-d36f0bbdcd4b",
+  "description": "Friendly and calm adult female for providing instructions and conversational support",
+  "created_at": "2025-10-29T19:35:24.373Z",
+  "language": "ja",
+  "is_owner": false,
+  "status": "active",
+  "gender": "feminine",
+  "country": "JP",
+  "is_pro": false,
+  "name": "Ayako",
+  "tagline": "",
+  "access": "public",
+  "visibility": "all",
+  "accents": [
+   {
+    "accent": "standard-japanese",
+    "locale": "ja-JP",
+    "is_native": true
+   }
+  ]
+ },
+ {
+  "id": "d1708217-3c6f-46c5-a46f-d47abdcd59e5",
+  "description": "Expertly coordinates information with a resourceful and patient tone, ensuring smooth and effective communication.",
+  "created_at": "2026-08-18T17:22:12.886Z",
+  "language": "ja",
+  "is_owner": false,
+  "status": "active",
+  "gender": "masculine",
+  "country": "JP",
+  "is_pro": false,
+  "name": "Kenta",
+  "tagline": "Resourceful Coordinator",
+  "access": "public",
+  "visibility": "all",
+  "accents": [
+   {
+    "accent": "standard-japanese",
+    "locale": "ja-JP",
+    "is_native": true
+   }
+  ]
+ },
+ {
+  "id": "7be83d14-4707-43ad-9774-e24eb38320f0",
+  "description": "An engaging and attentive voice that delivers content with a friendly yet professional approach, perfect for interactive dialogue.",
+  "created_at": "2026-08-11T00:26:34.774Z",
+  "language": "ja",
+  "is_owner": false,
+  "status": "active",
+  "gender": "feminine",
+  "country": "JP",
+  "is_pro": false,
+  "name": "Rin",
+  "tagline": "Engaging Communicator",
+  "access": "public",
+  "visibility": "all",
+  "accents": [
+   {
+    "accent": "standard-japanese",
+    "locale": "ja-JP",
+    "is_native": true
+   }
+  ]
+ },
+ {
+  "id": "6b92f628-be90-497c-8f4c-3b035002df71",
+  "description": "Calm, deep male for news narration and formal customer service",
+  "created_at": "1970-04-18T00:12:00.000Z",
+  "language": "ja",
+  "is_owner": false,
+  "status": "active",
+  "gender": "masculine",
+  "country": "JP",
+  "is_pro": false,
+  "name": "Kenji",
+  "tagline": "Calm Man",
+  "access": "public",
+  "visibility": "all",
+  "accents": [
+   {
+    "accent": "standard-japanese",
+    "locale": "ja-JP",
+    "is_native": true
+   }
+  ]
+ },
+ {
+  "id": "177df681-25b1-48c2-bb47-03ca5fa27f0a",
+  "description": "Calm Japanese male suited for professional and reassuring communication.",
+  "created_at": "2026-03-25T23:56:36.005Z",
+  "language": "ja",
+  "is_owner": false,
+  "status": "active",
+  "gender": "masculine",
+  "country": "JP",
+  "is_pro": false,
+  "name": "Ren",
+  "tagline": "Calm Navigator",
+  "access": "public",
+  "visibility": "all",
+  "accents": [
+   {
+    "accent": "standard-japanese",
+    "locale": "ja-JP",
+    "is_native": true
+   }
+  ]
+ },
+ {
+  "id": "d0ff6870-dd30-420d-8568-d756d806ea62",
+  "description": "Polished Japanese female for polite, reassuring assistance.",
+  "created_at": "2026-03-05T02:45:40.462Z",
+  "language": "ja",
+  "is_owner": false,
+  "status": "active",
+  "gender": "feminine",
+  "country": "JP",
+  "is_pro": false,
+  "name": "Hinata",
+  "tagline": "Graceful Guide",
+  "access": "public",
+  "visibility": "all",
+  "accents": [
+   {
+    "accent": "standard-japanese",
+    "locale": "ja-JP",
+    "is_native": true
+   }
+  ]
+ },
+ {
+  "id": "49e02441-83ea-4c77-bda8-79fdd7f07e92",
+  "description": "Young professional male for providing guidance and instruction",
+  "created_at": "2025-10-27T19:11:37.484Z",
+  "language": "ja",
+  "is_owner": false,
+  "status": "active",
+  "gender": "masculine",
+  "country": "JP",
+  "is_pro": false,
+  "name": "Tohru",
+  "tagline": "Career Coach",
+  "access": "public",
+  "visibility": "all",
+  "accents": [
+   {
+    "accent": "standard-japanese",
+    "locale": "ja-JP",
+    "is_native": true
+   }
+  ]
+ },
+ {
+  "id": "31c55968-a9f4-4115-8831-3a16952179c8",
+  "description": "Upbeat and enthusiastic adult female voice for sales, promotions, and engaging customer interactions",
+  "created_at": "2025-08-29T20:18:37.427Z",
+  "language": "ja",
+  "is_owner": false,
+  "status": "active",
+  "gender": "feminine",
+  "country": "JP",
+  "is_pro": false,
+  "name": "Ayumi",
+  "tagline": "Sales Guide",
+  "access": "public",
+  "visibility": "all",
+  "accents": [
+   {
+    "accent": "standard-japanese",
+    "locale": "ja-JP",
+    "is_native": true
+   }
+  ]
+ },
+ {
+  "id": "b8e1169c-f16a-4064-a6e0-95054169e553",
+  "description": "Serious adult male voice with a steady but approachable tone for casual conversations and professional dialogue",
+  "created_at": "2025-08-29T20:18:28.066Z",
+  "language": "ja",
+  "is_owner": false,
+  "status": "active",
+  "gender": "masculine",
+  "country": "JP",
+  "is_pro": false,
+  "name": "Takashi",
+  "tagline": "Professional Conversationalist",
+  "access": "public",
+  "visibility": "all",
+  "accents": [
+   {
+    "accent": "standard-japanese",
+    "locale": "ja-JP",
+    "is_native": true
+   }
+  ]
+ },
+ {
+  "id": "59d4fd2f-f5eb-4410-8105-58db7661144f",
+  "description": "Calm, more serious female for news narration and formal customer service",
+  "created_at": "1970-04-18T00:11:00.000Z",
+  "language": "ja",
+  "is_owner": false,
+  "status": "active",
+  "gender": "feminine",
+  "country": "JP",
+  "is_pro": false,
+  "name": "Yuki",
+  "tagline": "Calm Woman",
+  "access": "public",
+  "visibility": "all",
+  "accents": [
+   {
+    "accent": "standard-japanese",
+    "locale": "ja-JP",
+    "is_native": true
+   }
+  ]
+ },
+ {
+  "id": "c7eafe22-8b71-40cd-850b-c5a3bbd8f8d2",
+  "description": "Soft and delicate female with a gentle, timid tone for female game characters and children's book narrations",
+  "created_at": "1970-04-17T00:00:06.000Z",
+  "language": "ja",
+  "is_owner": false,
+  "status": "active",
+  "gender": "feminine",
+  "country": "JP",
+  "is_pro": false,
+  "name": "Emi",
+  "tagline": "Soft-Spoken Friend",
+  "access": "public",
+  "visibility": "all",
+  "accents": [
+   {
+    "accent": "standard-japanese",
+    "locale": "ja-JP",
+    "is_native": true
+   }
+  ]
+ },
+ {
+  "id": "2b568345-1d48-4047-b25f-7baccf842eb0",
+  "description": "Friendly, professional and upbeat woman for casual conversations",
+  "created_at": "1970-01-18T00:00:00.000Z",
+  "language": "ja",
+  "is_owner": false,
+  "status": "active",
+  "gender": "feminine",
+  "country": "JP",
+  "is_pro": false,
+  "name": "Yumiko",
+  "tagline": "Friendly Agent",
+  "access": "public",
+  "visibility": "all",
+  "accents": [
+   {
+    "accent": "standard-japanese",
+    "locale": "ja-JP",
+    "is_native": true
+   }
+  ]
+ },
+ {
+  "id": "e8a863c6-22c7-4671-86ca-91cacffc038d",
+  "description": "Business-like, clear male for professional use cases",
+  "created_at": "1970-01-09T00:00:00.000Z",
+  "language": "ja",
+  "is_owner": false,
+  "status": "active",
+  "gender": "masculine",
+  "country": "JP",
+  "is_pro": false,
+  "name": "Daisuke",
+  "tagline": "Businessman",
+  "access": "public",
+  "visibility": "all",
+  "accents": [
+   {
+    "accent": "standard-japanese",
+    "locale": "ja-JP",
+    "is_native": true
+   }
+  ]
+ },
+ {
+  "id": "5cad89c9-d88a-4832-89fb-55f2f16d13d3",
+  "description": "Confident voice with strong clarity and composed tone, perfect for persuasive and professional delivery",
+  "created_at": "2025-10-22T12:30:05.265Z",
+  "language": "en",
+  "is_owner": false,
+  "status": "active",
+  "gender": "masculine",
+  "country": "US",
+  "is_pro": false,
+  "name": "Brandon",
+  "tagline": "Confident Guy",
+  "access": "public",
+  "visibility": "all",
+  "accents": [
+   {
+    "accent": "general-american",
+    "locale": "en-US",
+    "is_native": true
+   },
+   {
+    "accent": "british",
+    "locale": "en-GB",
+    "is_native": false
+   },
+   {
+    "accent": "standard-hindi",
+    "locale": "hi-IN",
+    "is_native": false
+   },
+   {
+    "accent": "castilian",
+    "locale": "es-ES",
+    "is_native": false
+   },
+   {
+    "accent": "mexican",
+    "locale": "es-MX",
+    "is_native": false
+   },
+   {
+    "accent": "modern-standard-arabic",
+    "locale": "ar-SA",
+    "is_native": false
+   },
+   {
+    "accent": "bulgarian",
+    "locale": "bg-BG",
+    "is_native": false
+   },
+   {
+    "accent": "standard-german",
+    "locale": "de-DE",
+    "is_native": false
+   },
+   {
+    "accent": "canadian-french",
+    "locale": "fr-CA",
+    "is_native": false
+   },
+   {
+    "accent": "standard-italian",
+    "locale": "it-IT",
+    "is_native": false
+   },
+   {
+    "accent": "standard-japanese",
+    "locale": "ja-JP",
+    "is_native": false
+   },
+   {
+    "accent": "southern-karnataka",
+    "locale": "kn-IN",
+    "is_native": false
+   },
+   {
+    "accent": "korean",
+    "locale": "ko-KR",
+    "is_native": false
+   },
+   {
+    "accent": "north-kerala",
+    "locale": "ml-IN",
+    "is_native": false
+   },
+   {
+    "accent": "oslo",
+    "locale": "no-NO",
+    "is_native": false
+   },
+   {
+    "accent": "odia",
+    "locale": "or-IN",
+    "is_native": false
+   },
+   {
+    "accent": "brazilian-portuguese",
+    "locale": "pt-BR",
+    "is_native": false
+   },
+   {
+    "accent": "central-tamil",
+    "locale": "ta-IN",
+    "is_native": false
+   },
+   {
+    "accent": "telangana",
+    "locale": "te-IN",
+    "is_native": false
+   },
+   {
+    "accent": "central-thai",
+    "locale": "th-TH",
+    "is_native": false
+   },
+   {
+    "accent": "manila",
+    "locale": "tl-PH",
+    "is_native": false
+   },
+   {
+    "accent": "urdu",
+    "locale": "ur-PK",
+    "is_native": false
+   },
+   {
+    "accent": "mandarin",
+    "locale": "zh-CN",
+    "is_native": false
+   },
+   {
+    "accent": "taiwanese-mandarin",
+    "locale": "zh-TW",
+    "is_native": false
+   }
+  ]
+ },
+ {
+  "id": "ec1e269e-9ca0-402f-8a18-58e0e022355a",
+  "description": "Friendly and approachable female voice with a warm, welcoming tone that builds instant connection",
+  "created_at": "2025-10-14T08:11:30.464Z",
+  "language": "en",
+  "is_owner": false,
+  "status": "active",
+  "gender": "feminine",
+  "country": "US",
+  "is_pro": false,
+  "name": "Ariana",
+  "tagline": "Kind Friend",
+  "access": "public",
+  "visibility": "all",
+  "accents": [
+   {
+    "accent": "general-american",
+    "locale": "en-US",
+    "is_native": true
+   },
+   {
+    "accent": "british",
+    "locale": "en-GB",
+    "is_native": false
+   },
+   {
+    "accent": "standard-hindi",
+    "locale": "hi-IN",
+    "is_native": false
+   },
+   {
+    "accent": "castilian",
+    "locale": "es-ES",
+    "is_native": false
+   },
+   {
+    "accent": "mexican",
+    "locale": "es-MX",
+    "is_native": false
+   },
+   {
+    "accent": "modern-standard-arabic",
+    "locale": "ar-SA",
+    "is_native": false
+   },
+   {
+    "accent": "bulgarian",
+    "locale": "bg-BG",
+    "is_native": false
+   },
+   {
+    "accent": "standard-german",
+    "locale": "de-DE",
+    "is_native": false
+   },
+   {
+    "accent": "canadian-french",
+    "locale": "fr-CA",
+    "is_native": false
+   },
+   {
+    "accent": "parisian",
+    "locale": "fr-FR",
+    "is_native": false
+   },
+   {
+    "accent": "israeli",
+    "locale": "he-IL",
+    "is_native": false
+   },
+   {
+    "accent": "standard-italian",
+    "locale": "it-IT",
+    "is_native": false
+   },
+   {
+    "accent": "standard-japanese",
+    "locale": "ja-JP",
+    "is_native": false
+   },
+   {
+    "accent": "southern-karnataka",
+    "locale": "kn-IN",
+    "is_native": false
+   },
+   {
+    "accent": "korean",
+    "locale": "ko-KR",
+    "is_native": false
+   },
+   {
+    "accent": "north-kerala",
+    "locale": "ml-IN",
+    "is_native": false
+   },
+   {
+    "accent": "konkani",
+    "locale": "mr-IN",
+    "is_native": false
+   },
+   {
+    "accent": "oslo",
+    "locale": "no-NO",
+    "is_native": false
+   },
+   {
+    "accent": "odia",
+    "locale": "or-IN",
+    "is_native": false
+   },
+   {
+    "accent": "brazilian-portuguese",
+    "locale": "pt-BR",
+    "is_native": false
+   },
+   {
+    "accent": "central-tamil",
+    "locale": "ta-IN",
+    "is_native": false
+   },
+   {
+    "accent": "telangana",
+    "locale": "te-IN",
+    "is_native": false
+   },
+   {
+    "accent": "central-thai",
+    "locale": "th-TH",
+    "is_native": false
+   },
+   {
+    "accent": "manila",
+    "locale": "tl-PH",
+    "is_native": false
+   },
+   {
+    "accent": "urdu",
+    "locale": "ur-PK",
+    "is_native": false
+   },
+   {
+    "accent": "mandarin",
+    "locale": "zh-CN",
+    "is_native": false
+   }
+  ]
+ },
+ {
+  "id": "4df027cb-2920-4a1f-8c34-f21529d5c3fe",
+  "description": "Friendly, young adult male for customer support conversations",
+  "created_at": "2025-05-05T21:45:49.219Z",
+  "language": "en",
+  "is_owner": false,
+  "status": "active",
+  "gender": "masculine",
+  "country": "US",
+  "is_pro": false,
+  "name": "Carson",
+  "tagline": "Friendly Support",
+  "access": "public",
+  "visibility": "all",
+  "accents": [
+   {
+    "accent": "general-american",
+    "locale": "en-US",
+    "is_native": true
+   },
+   {
+    "accent": "british",
+    "locale": "en-GB",
+    "is_native": false
+   },
+   {
+    "accent": "standard-hindi",
+    "locale": "hi-IN",
+    "is_native": false
+   },
+   {
+    "accent": "castilian",
+    "locale": "es-ES",
+    "is_native": false
+   },
+   {
+    "accent": "mexican",
+    "locale": "es-MX",
+    "is_native": false
+   },
+   {
+    "accent": "modern-standard-arabic",
+    "locale": "ar-SA",
+    "is_native": false
+   },
+   {
+    "accent": "bulgarian",
+    "locale": "bg-BG",
+    "is_native": false
+   },
+   {
+    "accent": "standard-german",
+    "locale": "de-DE",
+    "is_native": false
+   },
+   {
+    "accent": "canadian-french",
+    "locale": "fr-CA",
+    "is_native": false
+   },
+   {
+    "accent": "parisian",
+    "locale": "fr-FR",
+    "is_native": false
+   },
+   {
+    "accent": "israeli",
+    "locale": "he-IL",
+    "is_native": false
+   },
+   {
+    "accent": "standard-italian",
+    "locale": "it-IT",
+    "is_native": false
+   },
+   {
+    "accent": "standard-japanese",
+    "locale": "ja-JP",
+    "is_native": false
+   },
+   {
+    "accent": "southern-karnataka",
+    "locale": "kn-IN",
+    "is_native": false
+   },
+   {
+    "accent": "korean",
+    "locale": "ko-KR",
+    "is_native": false
+   },
+   {
+    "accent": "north-kerala",
+    "locale": "ml-IN",
+    "is_native": false
+   },
+   {
+    "accent": "konkani",
+    "locale": "mr-IN",
+    "is_native": false
+   },
+   {
+    "accent": "oslo",
+    "locale": "no-NO",
+    "is_native": false
+   },
+   {
+    "accent": "odia",
+    "locale": "or-IN",
+    "is_native": false
+   },
+   {
+    "accent": "brazilian-portuguese",
+    "locale": "pt-BR",
+    "is_native": false
+   },
+   {
+    "accent": "central-tamil",
+    "locale": "ta-IN",
+    "is_native": false
+   },
+   {
+    "accent": "telangana",
+    "locale": "te-IN",
+    "is_native": false
+   },
+   {
+    "accent": "central-thai",
+    "locale": "th-TH",
+    "is_native": false
+   },
+   {
+    "accent": "manila",
+    "locale": "tl-PH",
+    "is_native": false
+   },
+   {
+    "accent": "urdu",
+    "locale": "ur-PK",
+    "is_native": false
+   },
+   {
+    "accent": "mandarin",
+    "locale": "zh-CN",
+    "is_native": false
+   },
+   {
+    "accent": "taiwanese-mandarin",
+    "locale": "zh-TW",
+    "is_native": false
+   }
+  ]
+ },
+ {
+  "id": "65209f8e-6140-4a20-b819-3cc2e21da19b",
+  "description": "Warm, engaging, and effortlessly dependable with a natural, conversational touch.",
+  "created_at": "2026-05-15T22:51:54.671Z",
+  "language": "en",
+  "is_owner": false,
+  "status": "active",
+  "gender": "masculine",
+  "country": "US",
+  "is_pro": false,
+  "name": "Nolan",
+  "tagline": "Expressive Agent",
+  "access": "public",
+  "visibility": "all",
+  "accents": [
+   {
+    "accent": "general-american",
+    "locale": "en-US",
+    "is_native": true
+   },
+   {
+    "accent": "standard-hindi",
+    "locale": "hi-IN",
+    "is_native": false
+   },
+   {
+    "accent": "mexican",
+    "locale": "es-MX",
+    "is_native": false
+   },
+   {
+    "accent": "standard-german",
+    "locale": "de-DE",
+    "is_native": false
+   },
+   {
+    "accent": "canadian-french",
+    "locale": "fr-CA",
+    "is_native": false
+   },
+   {
+    "accent": "standard-italian",
+    "locale": "it-IT",
+    "is_native": false
+   },
+   {
+    "accent": "standard-japanese",
+    "locale": "ja-JP",
+    "is_native": false
+   },
+   {
+    "accent": "brazilian-portuguese",
+    "locale": "pt-BR",
+    "is_native": false
+   }
+  ]
+ },
+ {
+  "id": "10bd4af4-825b-49b8-b8bd-0ca11865536e",
+  "description": "Refined and smooth articulation for high-quality corporate messaging.",
+  "created_at": "2026-04-10T10:41:22.602Z",
+  "language": "en",
+  "is_owner": false,
+  "status": "active",
+  "gender": "feminine",
+  "country": "US",
+  "is_pro": false,
+  "name": "Rachel",
+  "tagline": "Polished Presence",
+  "access": "public",
+  "visibility": "all",
+  "accents": [
+   {
+    "accent": "general-american",
+    "locale": "en-US",
+    "is_native": true
+   },
+   {
+    "accent": "australian",
+    "locale": "en-AU",
+    "is_native": false
+   },
+   {
+    "accent": "british",
+    "locale": "en-GB",
+    "is_native": false
+   },
+   {
+    "accent": "mexican",
+    "locale": "es-MX",
+    "is_native": false
+   },
+   {
+    "accent": "standard-japanese",
+    "locale": "ja-JP",
+    "is_native": false
+   },
+   {
+    "accent": "brazilian-portuguese",
+    "locale": "pt-BR",
+    "is_native": false
+   }
+  ]
+ },
+ {
+  "id": "2747b6cf-fa34-460c-97db-267566918881",
+  "description": "Confident, approachable young adult woman for natural conversational support",
+  "created_at": "2025-08-10T23:19:27.556Z",
+  "language": "en",
+  "is_owner": false,
+  "status": "active",
+  "gender": "feminine",
+  "country": "US",
+  "is_pro": false,
+  "name": "Allie",
+  "tagline": "Natural Conversationalist",
+  "access": "public",
+  "visibility": "all",
+  "accents": [
+   {
+    "accent": "general-american",
+    "locale": "en-US",
+    "is_native": true
+   },
+   {
+    "accent": "australian",
+    "locale": "en-AU",
+    "is_native": false
+   },
+   {
+    "accent": "british",
+    "locale": "en-GB",
+    "is_native": false
+   },
+   {
+    "accent": "mexican",
+    "locale": "es-MX",
+    "is_native": false
+   },
+   {
+    "accent": "standard-japanese",
+    "locale": "ja-JP",
+    "is_native": false
+   },
+   {
+    "accent": "brazilian-portuguese",
+    "locale": "pt-BR",
+    "is_native": false
+   }
+  ]
+ },
+ {
+  "id": "c0c374aa-09be-42d9-9828-4d2d7df86962",
+  "description": "Smooth and approachable female with a gentle Castilian accent for guidance and teaching",
+  "created_at": "2025-03-31T19:08:17.687Z",
+  "language": "es",
+  "is_owner": false,
+  "status": "active",
+  "gender": "feminine",
+  "country": "ES",
+  "is_pro": false,
+  "name": "Isabel",
+  "tagline": "Teacher",
+  "access": "public",
+  "visibility": "all",
+  "accents": [
+   {
+    "accent": "castilian",
+    "locale": "es-ES",
+    "is_native": true
+   },
+   {
+    "accent": "british",
+    "locale": "en-GB",
+    "is_native": false
+   },
+   {
+    "accent": "new-zealand",
+    "locale": "en-NZ",
+    "is_native": false
+   },
+   {
+    "accent": "general-american",
+    "locale": "en-US",
+    "is_native": false
+   },
+   {
+    "accent": "standard-hindi",
+    "locale": "hi-IN",
+    "is_native": false
+   },
+   {
+    "accent": "modern-standard-arabic",
+    "locale": "ar-SA",
+    "is_native": false
+   },
+   {
+    "accent": "standard-german",
+    "locale": "de-DE",
+    "is_native": false
+   },
+   {
+    "accent": "canadian-french",
+    "locale": "fr-CA",
+    "is_native": false
+   },
+   {
+    "accent": "parisian",
+    "locale": "fr-FR",
+    "is_native": false
+   },
+   {
+    "accent": "israeli",
+    "locale": "he-IL",
+    "is_native": false
+   },
+   {
+    "accent": "standard-italian",
+    "locale": "it-IT",
+    "is_native": false
+   },
+   {
+    "accent": "standard-japanese",
+    "locale": "ja-JP",
+    "is_native": false
+   },
+   {
+    "accent": "southern-karnataka",
+    "locale": "kn-IN",
+    "is_native": false
+   },
+   {
+    "accent": "korean",
+    "locale": "ko-KR",
+    "is_native": false
+   },
+   {
+    "accent": "north-kerala",
+    "locale": "ml-IN",
+    "is_native": false
+   },
+   {
+    "accent": "konkani",
+    "locale": "mr-IN",
+    "is_native": false
+   },
+   {
+    "accent": "odia",
+    "locale": "or-IN",
+    "is_native": false
+   },
+   {
+    "accent": "brazilian-portuguese",
+    "locale": "pt-BR",
+    "is_native": false
+   },
+   {
+    "accent": "central-tamil",
+    "locale": "ta-IN",
+    "is_native": false
+   },
+   {
+    "accent": "telangana",
+    "locale": "te-IN",
+    "is_native": false
+   },
+   {
+    "accent": "central-thai",
+    "locale": "th-TH",
+    "is_native": false
+   },
+   {
+    "accent": "manila",
+    "locale": "tl-PH",
+    "is_native": false
+   },
+   {
+    "accent": "urdu",
+    "locale": "ur-PK",
+    "is_native": false
+   },
+   {
+    "accent": "mandarin",
+    "locale": "zh-CN",
+    "is_native": false
+   },
+   {
+    "accent": "taiwanese-mandarin",
+    "locale": "zh-TW",
+    "is_native": false
+   }
+  ]
+ },
+ {
+  "id": "c1cfee3d-532d-47f8-8dd2-8e5b2b66bf1d",
+  "description": "Versatile articulate male for storytelling",
+  "created_at": "1970-04-18T00:22:00.000Z",
+  "language": "tr",
+  "is_owner": false,
+  "status": "active",
+  "gender": "masculine",
+  "country": "TR",
+  "is_pro": false,
+  "name": "Taylan",
+  "tagline": "Expressive Voice",
+  "access": "public",
+  "visibility": "all",
+  "accents": [
+   {
+    "accent": "istanbul",
+    "locale": "tr-TR",
+    "is_native": true
+   },
+   {
+    "accent": "british",
+    "locale": "en-GB",
+    "is_native": false
+   },
+   {
+    "accent": "general-american",
+    "locale": "en-US",
+    "is_native": false
+   },
+   {
+    "accent": "standard-hindi",
+    "locale": "hi-IN",
+    "is_native": false
+   },
+   {
+    "accent": "castilian",
+    "locale": "es-ES",
+    "is_native": false
+   },
+   {
+    "accent": "mexican",
+    "locale": "es-MX",
+    "is_native": false
+   },
+   {
+    "accent": "modern-standard-arabic",
+    "locale": "ar-SA",
+    "is_native": false
+   },
+   {
+    "accent": "standard-german",
+    "locale": "de-DE",
+    "is_native": false
+   },
+   {
+    "accent": "canadian-french",
+    "locale": "fr-CA",
+    "is_native": false
+   },
+   {
+    "accent": "parisian",
+    "locale": "fr-FR",
+    "is_native": false
+   },
+   {
+    "accent": "israeli",
+    "locale": "he-IL",
+    "is_native": false
+   },
+   {
+    "accent": "standard-italian",
+    "locale": "it-IT",
+    "is_native": false
+   },
+   {
+    "accent": "standard-japanese",
+    "locale": "ja-JP",
+    "is_native": false
+   },
+   {
+    "accent": "southern-karnataka",
+    "locale": "kn-IN",
+    "is_native": false
+   },
+   {
+    "accent": "korean",
+    "locale": "ko-KR",
+    "is_native": false
+   },
+   {
+    "accent": "north-kerala",
+    "locale": "ml-IN",
+    "is_native": false
+   },
+   {
+    "accent": "konkani",
+    "locale": "mr-IN",
+    "is_native": false
+   },
+   {
+    "accent": "brazilian-portuguese",
+    "locale": "pt-BR",
+    "is_native": false
+   },
+   {
+    "accent": "central-tamil",
+    "locale": "ta-IN",
+    "is_native": false
+   },
+   {
+    "accent": "telangana",
+    "locale": "te-IN",
+    "is_native": false
+   },
+   {
+    "accent": "central-thai",
+    "locale": "th-TH",
+    "is_native": false
+   },
+   {
+    "accent": "manila",
+    "locale": "tl-PH",
+    "is_native": false
+   },
+   {
+    "accent": "urdu",
+    "locale": "ur-PK",
+    "is_native": false
+   },
+   {
+    "accent": "mandarin",
+    "locale": "zh-CN",
+    "is_native": false
+   },
+   {
+    "accent": "taiwanese-mandarin",
+    "locale": "zh-TW",
+    "is_native": false
+   }
+  ]
+ },
+ {
+  "id": "358e650d-ac0b-4a74-b14f-aca3daa40d79",
+  "description": "Clear, steady, and professional voice perfect for conveying reliability and smooth confidence.",
+  "created_at": "2026-05-15T20:59:40.289Z",
+  "language": "en",
+  "is_owner": false,
+  "status": "active",
+  "gender": "feminine",
+  "country": "US",
+  "is_pro": false,
+  "name": "Kendra",
+  "tagline": "Smooth Communicator",
+  "access": "public",
+  "visibility": "all",
+  "accents": [
+   {
+    "accent": "southern-us",
+    "locale": "en-US",
+    "is_native": true
+   },
+   {
+    "accent": "british",
+    "locale": "en-GB",
+    "is_native": false
+   },
+   {
+    "accent": "standard-hindi",
+    "locale": "hi-IN",
+    "is_native": false
+   },
+   {
+    "accent": "castilian",
+    "locale": "es-ES",
+    "is_native": false
+   },
+   {
+    "accent": "modern-standard-arabic",
+    "locale": "ar-SA",
+    "is_native": false
+   },
+   {
+    "accent": "bulgarian",
+    "locale": "bg-BG",
+    "is_native": false
+   },
+   {
+    "accent": "standard-german",
+    "locale": "de-DE",
+    "is_native": false
+   },
+   {
+    "accent": "canadian-french",
+    "locale": "fr-CA",
+    "is_native": false
+   },
+   {
+    "accent": "parisian",
+    "locale": "fr-FR",
+    "is_native": false
+   },
+   {
+    "accent": "standard-italian",
+    "locale": "it-IT",
+    "is_native": false
+   },
+   {
+    "accent": "standard-japanese",
+    "locale": "ja-JP",
+    "is_native": false
+   },
+   {
+    "accent": "southern-karnataka",
+    "locale": "kn-IN",
+    "is_native": false
+   },
+   {
+    "accent": "korean",
+    "locale": "ko-KR",
+    "is_native": false
+   },
+   {
+    "accent": "north-kerala",
+    "locale": "ml-IN",
+    "is_native": false
+   },
+   {
+    "accent": "konkani",
+    "locale": "mr-IN",
+    "is_native": false
+   },
+   {
+    "accent": "oslo",
+    "locale": "no-NO",
+    "is_native": false
+   },
+   {
+    "accent": "odia",
+    "locale": "or-IN",
+    "is_native": false
+   },
+   {
+    "accent": "brazilian-portuguese",
+    "locale": "pt-BR",
+    "is_native": false
+   },
+   {
+    "accent": "central-tamil",
+    "locale": "ta-IN",
+    "is_native": false
+   },
+   {
+    "accent": "telangana",
+    "locale": "te-IN",
+    "is_native": false
+   },
+   {
+    "accent": "central-thai",
+    "locale": "th-TH",
+    "is_native": false
+   },
+   {
+    "accent": "manila",
+    "locale": "tl-PH",
+    "is_native": false
+   },
+   {
+    "accent": "urdu",
+    "locale": "ur-PK",
+    "is_native": false
+   },
+   {
+    "accent": "mandarin",
+    "locale": "zh-CN",
+    "is_native": false
+   }
+  ]
+ },
+ {
+  "id": "432fc642-6a83-4975-b77a-c605903b5ba6",
+  "description": "Crisp, approachable Hindi female built for digital assistance.",
+  "created_at": "2026-03-29T08:24:01.695Z",
+  "language": "hi",
+  "is_owner": false,
+  "status": "active",
+  "gender": "feminine",
+  "country": "IN",
+  "is_pro": false,
+  "name": "Sanya",
+  "tagline": "Modern Communicator",
+  "access": "public",
+  "visibility": "all",
+  "accents": [
+   {
+    "accent": "standard-hindi",
+    "locale": "hi-IN",
+    "is_native": true
+   },
+   {
+    "accent": "castilian",
+    "locale": "es-ES",
+    "is_native": false
+   },
+   {
+    "accent": "modern-standard-arabic",
+    "locale": "ar-SA",
+    "is_native": false
+   },
+   {
+    "accent": "standard-german",
+    "locale": "de-DE",
+    "is_native": false
+   },
+   {
+    "accent": "standard-japanese",
+    "locale": "ja-JP",
+    "is_native": false
+   },
+   {
+    "accent": "southern-karnataka",
+    "locale": "kn-IN",
+    "is_native": false
+   },
+   {
+    "accent": "north-kerala",
+    "locale": "ml-IN",
+    "is_native": false
+   },
+   {
+    "accent": "konkani",
+    "locale": "mr-IN",
+    "is_native": false
+   },
+   {
+    "accent": "odia",
+    "locale": "or-IN",
+    "is_native": false
+   },
+   {
+    "accent": "brazilian-portuguese",
+    "locale": "pt-BR",
+    "is_native": false
+   },
+   {
+    "accent": "central-tamil",
+    "locale": "ta-IN",
+    "is_native": false
+   },
+   {
+    "accent": "telangana",
+    "locale": "te-IN",
+    "is_native": false
+   },
+   {
+    "accent": "central-thai",
+    "locale": "th-TH",
+    "is_native": false
+   },
+   {
+    "accent": "manila",
+    "locale": "tl-PH",
+    "is_native": false
+   },
+   {
+    "accent": "urdu",
+    "locale": "ur-PK",
+    "is_native": false
+   },
+   {
+    "accent": "mandarin",
+    "locale": "zh-CN",
+    "is_native": false
+   }
+  ]
+ },
+ {
+  "id": "911b8b22-887f-4caf-bf87-85d834c08708",
+  "description": "Well-paced male voice with clear enunciation, great for approachable and informative conversations",
+  "created_at": "2026-01-09T23:10:59.279Z",
+  "language": "en",
+  "is_owner": false,
+  "status": "active",
+  "gender": "masculine",
+  "country": "US",
+  "is_pro": false,
+  "name": "Kenneth",
+  "tagline": "Friendly Rep",
+  "access": "public",
+  "visibility": "all",
+  "accents": [
+   {
+    "accent": "general-american",
+    "locale": "en-US",
+    "is_native": true
+   },
+   {
+    "accent": "standard-hindi",
+    "locale": "hi-IN",
+    "is_native": false
+   },
+   {
+    "accent": "castilian",
+    "locale": "es-ES",
+    "is_native": false
+   },
+   {
+    "accent": "mexican",
+    "locale": "es-MX",
+    "is_native": false
+   },
+   {
+    "accent": "modern-standard-arabic",
+    "locale": "ar-SA",
+    "is_native": false
+   },
+   {
+    "accent": "bulgarian",
+    "locale": "bg-BG",
+    "is_native": false
+   },
+   {
+    "accent": "standard-german",
+    "locale": "de-DE",
+    "is_native": false
+   },
+   {
+    "accent": "canadian-french",
+    "locale": "fr-CA",
+    "is_native": false
+   },
+   {
+    "accent": "parisian",
+    "locale": "fr-FR",
+    "is_native": false
+   },
+   {
+    "accent": "standard-italian",
+    "locale": "it-IT",
+    "is_native": false
+   },
+   {
+    "accent": "standard-japanese",
+    "locale": "ja-JP",
+    "is_native": false
+   },
+   {
+    "accent": "southern-karnataka",
+    "locale": "kn-IN",
+    "is_native": false
+   },
+   {
+    "accent": "korean",
+    "locale": "ko-KR",
+    "is_native": false
+   },
+   {
+    "accent": "north-kerala",
+    "locale": "ml-IN",
+    "is_native": false
+   },
+   {
+    "accent": "konkani",
+    "locale": "mr-IN",
+    "is_native": false
+   },
+   {
+    "accent": "oslo",
+    "locale": "no-NO",
+    "is_native": false
+   },
+   {
+    "accent": "odia",
+    "locale": "or-IN",
+    "is_native": false
+   },
+   {
+    "accent": "brazilian-portuguese",
+    "locale": "pt-BR",
+    "is_native": false
+   },
+   {
+    "accent": "central-tamil",
+    "locale": "ta-IN",
+    "is_native": false
+   },
+   {
+    "accent": "telangana",
+    "locale": "te-IN",
+    "is_native": false
+   },
+   {
+    "accent": "central-thai",
+    "locale": "th-TH",
+    "is_native": false
+   },
+   {
+    "accent": "manila",
+    "locale": "tl-PH",
+    "is_native": false
+   },
+   {
+    "accent": "urdu",
+    "locale": "ur-PK",
+    "is_native": false
+   },
+   {
+    "accent": "mandarin",
+    "locale": "zh-CN",
+    "is_native": false
+   },
+   {
+    "accent": "taiwanese-mandarin",
+    "locale": "zh-TW",
+    "is_native": false
+   }
+  ]
+ },
+ {
+  "id": "791d5162-d5eb-40f0-8189-f19db44611d8",
+  "description": "Confident, young Indian male for delivering demos and instructions",
+  "created_at": "2026-01-09T23:10:59.279Z",
+  "language": "hi",
+  "is_owner": false,
+  "status": "active",
+  "gender": "masculine",
+  "country": "IN",
+  "is_pro": false,
+  "name": "Ayush",
+  "tagline": "Friendly Neighbor",
+  "access": "public",
+  "visibility": "all",
+  "accents": [
+   {
+    "accent": "standard-hindi",
+    "locale": "hi-IN",
+    "is_native": true
+   },
+   {
+    "accent": "castilian",
+    "locale": "es-ES",
+    "is_native": false
+   },
+   {
+    "accent": "mexican",
+    "locale": "es-MX",
+    "is_native": false
+   },
+   {
+    "accent": "modern-standard-arabic",
+    "locale": "ar-SA",
+    "is_native": false
+   },
+   {
+    "accent": "standard-german",
+    "locale": "de-DE",
+    "is_native": false
+   },
+   {
+    "accent": "canadian-french",
+    "locale": "fr-CA",
+    "is_native": false
+   },
+   {
+    "accent": "parisian",
+    "locale": "fr-FR",
+    "is_native": false
+   },
+   {
+    "accent": "israeli",
+    "locale": "he-IL",
+    "is_native": false
+   },
+   {
+    "accent": "standard-italian",
+    "locale": "it-IT",
+    "is_native": false
+   },
+   {
+    "accent": "standard-japanese",
+    "locale": "ja-JP",
+    "is_native": false
+   },
+   {
+    "accent": "southern-karnataka",
+    "locale": "kn-IN",
+    "is_native": false
+   },
+   {
+    "accent": "korean",
+    "locale": "ko-KR",
+    "is_native": false
+   },
+   {
+    "accent": "north-kerala",
+    "locale": "ml-IN",
+    "is_native": false
+   },
+   {
+    "accent": "konkani",
+    "locale": "mr-IN",
+    "is_native": false
+   },
+   {
+    "accent": "odia",
+    "locale": "or-IN",
+    "is_native": false
+   },
+   {
+    "accent": "brazilian-portuguese",
+    "locale": "pt-BR",
+    "is_native": false
+   },
+   {
+    "accent": "central-tamil",
+    "locale": "ta-IN",
+    "is_native": false
+   },
+   {
+    "accent": "telangana",
+    "locale": "te-IN",
+    "is_native": false
+   },
+   {
+    "accent": "central-thai",
+    "locale": "th-TH",
+    "is_native": false
+   },
+   {
+    "accent": "manila",
+    "locale": "tl-PH",
+    "is_native": false
+   },
+   {
+    "accent": "urdu",
+    "locale": "ur-PK",
+    "is_native": false
+   },
+   {
+    "accent": "mandarin",
+    "locale": "zh-CN",
+    "is_native": false
+   },
+   {
+    "accent": "taiwanese-mandarin",
+    "locale": "zh-TW",
+    "is_native": false
+   }
+  ]
+ },
+ {
+  "id": "1242fb95-7ddd-44ac-8a05-9e8a22a6137d",
+  "description": "Smooth, welcoming adult female for frontline customer interactions",
+  "created_at": "2026-01-09T23:10:59.279Z",
+  "language": "en",
+  "is_owner": false,
+  "status": "active",
+  "gender": "feminine",
+  "country": "US",
+  "is_pro": false,
+  "name": "Cindy",
+  "tagline": "Receptionist",
+  "access": "public",
+  "visibility": "all",
+  "accents": [
+   {
+    "accent": "general-american",
+    "locale": "en-US",
+    "is_native": true
+   },
+   {
+    "accent": "australian",
+    "locale": "en-AU",
+    "is_native": false
+   },
+   {
+    "accent": "british",
+    "locale": "en-GB",
+    "is_native": false
+   },
+   {
+    "accent": "mexican",
+    "locale": "es-MX",
+    "is_native": false
+   },
+   {
+    "accent": "standard-japanese",
+    "locale": "ja-JP",
+    "is_native": false
+   },
+   {
+    "accent": "brazilian-portuguese",
+    "locale": "pt-BR",
+    "is_native": false
+   }
+  ]
+ },
+ {
+  "id": "f1cdfb4a-bf7d-4e83-916e-8f0802278315",
+  "description": "Warm, confident voice for clear, customer-facing conversations",
+  "created_at": "2025-12-22T17:37:13.297Z",
+  "language": "ar",
+  "is_owner": false,
+  "status": "active",
+  "gender": "masculine",
+  "country": "SA",
+  "is_pro": false,
+  "name": "Walid",
+  "tagline": "Steady Presence",
+  "access": "public",
+  "visibility": "all",
+  "accents": [
+   {
+    "accent": "khaleeji",
+    "locale": "ar-SA",
+    "is_native": true
+   },
+   {
+    "accent": "new-zealand",
+    "locale": "en-NZ",
+    "is_native": false
+   },
+   {
+    "accent": "general-american",
+    "locale": "en-US",
+    "is_native": false
+   },
+   {
+    "accent": "standard-hindi",
+    "locale": "hi-IN",
+    "is_native": false
+   },
+   {
+    "accent": "castilian",
+    "locale": "es-ES",
+    "is_native": false
+   },
+   {
+    "accent": "mexican",
+    "locale": "es-MX",
+    "is_native": false
+   },
+   {
+    "accent": "modern-standard-arabic",
+    "locale": "ar-SA",
+    "is_native": false
+   },
+   {
+    "accent": "standard-german",
+    "locale": "de-DE",
+    "is_native": false
+   },
+   {
+    "accent": "canadian-french",
+    "locale": "fr-CA",
+    "is_native": false
+   },
+   {
+    "accent": "parisian",
+    "locale": "fr-FR",
+    "is_native": false
+   },
+   {
+    "accent": "israeli",
+    "locale": "he-IL",
+    "is_native": false
+   },
+   {
+    "accent": "standard-italian",
+    "locale": "it-IT",
+    "is_native": false
+   },
+   {
+    "accent": "standard-japanese",
+    "locale": "ja-JP",
+    "is_native": false
+   },
+   {
+    "accent": "southern-karnataka",
+    "locale": "kn-IN",
+    "is_native": false
+   },
+   {
+    "accent": "korean",
+    "locale": "ko-KR",
+    "is_native": false
+   },
+   {
+    "accent": "north-kerala",
+    "locale": "ml-IN",
+    "is_native": false
+   },
+   {
+    "accent": "konkani",
+    "locale": "mr-IN",
+    "is_native": false
+   },
+   {
+    "accent": "odia",
+    "locale": "or-IN",
+    "is_native": false
+   },
+   {
+    "accent": "brazilian-portuguese",
+    "locale": "pt-BR",
+    "is_native": false
+   },
+   {
+    "accent": "central-tamil",
+    "locale": "ta-IN",
+    "is_native": false
+   },
+   {
+    "accent": "telangana",
+    "locale": "te-IN",
+    "is_native": false
+   },
+   {
+    "accent": "central-thai",
+    "locale": "th-TH",
+    "is_native": false
+   },
+   {
+    "accent": "manila",
+    "locale": "tl-PH",
+    "is_native": false
+   },
+   {
+    "accent": "urdu",
+    "locale": "ur-PK",
+    "is_native": false
+   },
+   {
+    "accent": "mandarin",
+    "locale": "zh-CN",
+    "is_native": false
+   },
+   {
+    "accent": "taiwanese-mandarin",
+    "locale": "zh-TW",
+    "is_native": false
+   }
+  ]
+ },
+ {
+  "id": "dda51133-5d43-4a3b-84e6-e68c13f60cba",
+  "description": "Relaxed, casual voice for friendly, everyday conversations",
+  "created_at": "2025-12-18T19:33:03.568Z",
+  "language": "en",
+  "is_owner": false,
+  "status": "active",
+  "gender": "feminine",
+  "country": "US",
+  "is_pro": false,
+  "name": "Lily",
+  "tagline": "Casual Pal",
+  "access": "public",
+  "visibility": "all",
+  "accents": [
+   {
+    "accent": "general-american",
+    "locale": "en-US",
+    "is_native": true
+   },
+   {
+    "accent": "standard-hindi",
+    "locale": "hi-IN",
+    "is_native": false
+   },
+   {
+    "accent": "castilian",
+    "locale": "es-ES",
+    "is_native": false
+   },
+   {
+    "accent": "mexican",
+    "locale": "es-MX",
+    "is_native": false
+   },
+   {
+    "accent": "modern-standard-arabic",
+    "locale": "ar-SA",
+    "is_native": false
+   },
+   {
+    "accent": "standard-german",
+    "locale": "de-DE",
+    "is_native": false
+   },
+   {
+    "accent": "canadian-french",
+    "locale": "fr-CA",
+    "is_native": false
+   },
+   {
+    "accent": "parisian",
+    "locale": "fr-FR",
+    "is_native": false
+   },
+   {
+    "accent": "israeli",
+    "locale": "he-IL",
+    "is_native": false
+   },
+   {
+    "accent": "standard-italian",
+    "locale": "it-IT",
+    "is_native": false
+   },
+   {
+    "accent": "standard-japanese",
+    "locale": "ja-JP",
+    "is_native": false
+   },
+   {
+    "accent": "southern-karnataka",
+    "locale": "kn-IN",
+    "is_native": false
+   },
+   {
+    "accent": "north-kerala",
+    "locale": "ml-IN",
+    "is_native": false
+   },
+   {
+    "accent": "brazilian-portuguese",
+    "locale": "pt-BR",
+    "is_native": false
+   },
+   {
+    "accent": "central-tamil",
+    "locale": "ta-IN",
+    "is_native": false
+   },
+   {
+    "accent": "telangana",
+    "locale": "te-IN",
+    "is_native": false
+   },
+   {
+    "accent": "central-thai",
+    "locale": "th-TH",
+    "is_native": false
+   },
+   {
+    "accent": "manila",
+    "locale": "tl-PH",
+    "is_native": false
+   },
+   {
+    "accent": "urdu",
+    "locale": "ur-PK",
+    "is_native": false
+   },
+   {
+    "accent": "mandarin",
+    "locale": "zh-CN",
+    "is_native": false
+   },
+   {
+    "accent": "taiwanese-mandarin",
+    "locale": "zh-TW",
+    "is_native": false
+   }
+  ]
+ },
+ {
+  "id": "55e2a153-c61e-4784-85c8-e954cb22fe29",
+  "description": "Formal male voice with clear pronunciation for professional narration and announcements",
+  "created_at": "2025-12-16T18:41:58.631Z",
+  "language": "hi",
+  "is_owner": false,
+  "status": "active",
+  "gender": "masculine",
+  "country": "IN",
+  "is_pro": false,
+  "name": "Sanjay",
+  "tagline": "Clear Speaker",
+  "access": "public",
+  "visibility": "all",
+  "accents": [
+   {
+    "accent": "standard-hindi",
+    "locale": "hi-IN",
+    "is_native": true
+   },
+   {
+    "accent": "british",
+    "locale": "en-GB",
+    "is_native": false
+   },
+   {
+    "accent": "general-american",
+    "locale": "en-US",
+    "is_native": false
+   },
+   {
+    "accent": "castilian",
+    "locale": "es-ES",
+    "is_native": false
+   },
+   {
+    "accent": "mexican",
+    "locale": "es-MX",
+    "is_native": false
+   },
+   {
+    "accent": "modern-standard-arabic",
+    "locale": "ar-SA",
+    "is_native": false
+   },
+   {
+    "accent": "bulgarian",
+    "locale": "bg-BG",
+    "is_native": false
+   },
+   {
+    "accent": "standard-german",
+    "locale": "de-DE",
+    "is_native": false
+   },
+   {
+    "accent": "canadian-french",
+    "locale": "fr-CA",
+    "is_native": false
+   },
+   {
+    "accent": "parisian",
+    "locale": "fr-FR",
+    "is_native": false
+   },
+   {
+    "accent": "israeli",
+    "locale": "he-IL",
+    "is_native": false
+   },
+   {
+    "accent": "standard-italian",
+    "locale": "it-IT",
+    "is_native": false
+   },
+   {
+    "accent": "standard-japanese",
+    "locale": "ja-JP",
+    "is_native": false
+   },
+   {
+    "accent": "southern-karnataka",
+    "locale": "kn-IN",
+    "is_native": false
+   },
+   {
+    "accent": "korean",
+    "locale": "ko-KR",
+    "is_native": false
+   },
+   {
+    "accent": "north-kerala",
+    "locale": "ml-IN",
+    "is_native": false
+   },
+   {
+    "accent": "konkani",
+    "locale": "mr-IN",
+    "is_native": false
+   },
+   {
+    "accent": "oslo",
+    "locale": "no-NO",
+    "is_native": false
+   },
+   {
+    "accent": "odia",
+    "locale": "or-IN",
+    "is_native": false
+   },
+   {
+    "accent": "brazilian-portuguese",
+    "locale": "pt-BR",
+    "is_native": false
+   },
+   {
+    "accent": "central-tamil",
+    "locale": "ta-IN",
+    "is_native": false
+   },
+   {
+    "accent": "telangana",
+    "locale": "te-IN",
+    "is_native": false
+   },
+   {
+    "accent": "central-thai",
+    "locale": "th-TH",
+    "is_native": false
+   },
+   {
+    "accent": "manila",
+    "locale": "tl-PH",
+    "is_native": false
+   },
+   {
+    "accent": "urdu",
+    "locale": "ur-PK",
+    "is_native": false
+   },
+   {
+    "accent": "mandarin",
+    "locale": "zh-CN",
+    "is_native": false
+   },
+   {
+    "accent": "taiwanese-mandarin",
+    "locale": "zh-TW",
+    "is_native": false
+   }
+  ]
+ },
+ {
+  "id": "23112795-d54e-4560-9568-791a87c30201",
+  "description": "Husky matured male voice with rich texture and commanding tone, ideal for engaging story telling and narrations",
+  "created_at": "2025-10-16T07:02:03.605Z",
+  "language": "en",
+  "is_owner": false,
+  "status": "active",
+  "gender": "masculine",
+  "country": "US",
+  "is_pro": false,
+  "name": "Darius",
+  "tagline": "Engaging Narrator",
+  "access": "public",
+  "visibility": "all",
+  "accents": [
+   {
+    "accent": "general-american",
+    "locale": "en-US",
+    "is_native": true
+   },
+   {
+    "accent": "standard-hindi",
+    "locale": "hi-IN",
+    "is_native": false
+   },
+   {
+    "accent": "castilian",
+    "locale": "es-ES",
+    "is_native": false
+   },
+   {
+    "accent": "mexican",
+    "locale": "es-MX",
+    "is_native": false
+   },
+   {
+    "accent": "modern-standard-arabic",
+    "locale": "ar-SA",
+    "is_native": false
+   },
+   {
+    "accent": "bulgarian",
+    "locale": "bg-BG",
+    "is_native": false
+   },
+   {
+    "accent": "standard-german",
+    "locale": "de-DE",
+    "is_native": false
+   },
+   {
+    "accent": "canadian-french",
+    "locale": "fr-CA",
+    "is_native": false
+   },
+   {
+    "accent": "parisian",
+    "locale": "fr-FR",
+    "is_native": false
+   },
+   {
+    "accent": "israeli",
+    "locale": "he-IL",
+    "is_native": false
+   },
+   {
+    "accent": "standard-italian",
+    "locale": "it-IT",
+    "is_native": false
+   },
+   {
+    "accent": "standard-japanese",
+    "locale": "ja-JP",
+    "is_native": false
+   },
+   {
+    "accent": "southern-karnataka",
+    "locale": "kn-IN",
+    "is_native": false
+   },
+   {
+    "accent": "konkani",
+    "locale": "mr-IN",
+    "is_native": false
+   },
+   {
+    "accent": "oslo",
+    "locale": "no-NO",
+    "is_native": false
+   },
+   {
+    "accent": "odia",
+    "locale": "or-IN",
+    "is_native": false
+   },
+   {
+    "accent": "brazilian-portuguese",
+    "locale": "pt-BR",
+    "is_native": false
+   },
+   {
+    "accent": "central-tamil",
+    "locale": "ta-IN",
+    "is_native": false
+   },
+   {
+    "accent": "telangana",
+    "locale": "te-IN",
+    "is_native": false
+   },
+   {
+    "accent": "central-thai",
+    "locale": "th-TH",
+    "is_native": false
+   },
+   {
+    "accent": "manila",
+    "locale": "tl-PH",
+    "is_native": false
+   },
+   {
+    "accent": "urdu",
+    "locale": "ur-PK",
+    "is_native": false
+   },
+   {
+    "accent": "mandarin",
+    "locale": "zh-CN",
+    "is_native": false
+   },
+   {
+    "accent": "taiwanese-mandarin",
+    "locale": "zh-TW",
+    "is_native": false
+   }
+  ]
+ },
+ {
+  "id": "7c6219d2-e8d2-462c-89d8-7ecba7c75d65",
+  "description": "Lively and cheerful adult female voice for product advertisements, upbeat promotions, and happy storytelling",
+  "created_at": "2025-08-29T20:20:51.710Z",
+  "language": "kn",
+  "is_owner": false,
+  "status": "active",
+  "gender": "feminine",
+  "country": "IN",
+  "is_pro": false,
+  "name": "Divya",
+  "tagline": "Joyful Narrator",
+  "access": "public",
+  "visibility": "all",
+  "accents": [
+   {
+    "accent": "southern-karnataka",
+    "locale": "kn-IN",
+    "is_native": true
+   },
+   {
+    "accent": "british",
+    "locale": "en-GB",
+    "is_native": false
+   },
+   {
+    "accent": "african-american",
+    "locale": "en-US",
+    "is_native": false
+   },
+   {
+    "accent": "general-american",
+    "locale": "en-US",
+    "is_native": false
+   },
+   {
+    "accent": "standard-hindi",
+    "locale": "hi-IN",
+    "is_native": false
+   },
+   {
+    "accent": "castilian",
+    "locale": "es-ES",
+    "is_native": false
+   },
+   {
+    "accent": "mexican",
+    "locale": "es-MX",
+    "is_native": false
+   },
+   {
+    "accent": "modern-standard-arabic",
+    "locale": "ar-SA",
+    "is_native": false
+   },
+   {
+    "accent": "standard-german",
+    "locale": "de-DE",
+    "is_native": false
+   },
+   {
+    "accent": "canadian-french",
+    "locale": "fr-CA",
+    "is_native": false
+   },
+   {
+    "accent": "parisian",
+    "locale": "fr-FR",
+    "is_native": false
+   },
+   {
+    "accent": "israeli",
+    "locale": "he-IL",
+    "is_native": false
+   },
+   {
+    "accent": "standard-italian",
+    "locale": "it-IT",
+    "is_native": false
+   },
+   {
+    "accent": "standard-japanese",
+    "locale": "ja-JP",
+    "is_native": false
+   },
+   {
+    "accent": "korean",
+    "locale": "ko-KR",
+    "is_native": false
+   },
+   {
+    "accent": "north-kerala",
+    "locale": "ml-IN",
+    "is_native": false
+   },
+   {
+    "accent": "konkani",
+    "locale": "mr-IN",
+    "is_native": false
+   },
+   {
+    "accent": "odia",
+    "locale": "or-IN",
+    "is_native": false
+   },
+   {
+    "accent": "brazilian-portuguese",
+    "locale": "pt-BR",
+    "is_native": false
+   },
+   {
+    "accent": "central-tamil",
+    "locale": "ta-IN",
+    "is_native": false
+   },
+   {
+    "accent": "telangana",
+    "locale": "te-IN",
+    "is_native": false
+   },
+   {
+    "accent": "central-thai",
+    "locale": "th-TH",
+    "is_native": false
+   },
+   {
+    "accent": "manila",
+    "locale": "tl-PH",
+    "is_native": false
+   },
+   {
+    "accent": "urdu",
+    "locale": "ur-PK",
+    "is_native": false
+   },
+   {
+    "accent": "mandarin",
+    "locale": "zh-CN",
+    "is_native": false
+   },
+   {
+    "accent": "taiwanese-mandarin",
+    "locale": "zh-TW",
+    "is_native": false
+   }
+  ]
+ },
+ {
+  "id": "a3520a8f-226a-428d-9fcd-b0a4711a6829",
+  "description": "This voice is even, full, and reflective, perfect for a young narrator for an audiobook or movie",
+  "created_at": "2024-05-20T01:37:27.395Z",
+  "language": "en",
+  "is_owner": false,
+  "status": "active",
+  "gender": "feminine",
+  "country": "US",
+  "is_pro": false,
+  "name": "Reflective Woman",
+  "tagline": "",
+  "access": "public",
+  "visibility": "all",
+  "accents": [
+   {
+    "accent": "general-american",
+    "locale": "en-US",
+    "is_native": true
+   },
+   {
+    "accent": "standard-hindi",
+    "locale": "hi-IN",
+    "is_native": false
+   },
+   {
+    "accent": "mexican",
+    "locale": "es-MX",
+    "is_native": false
+   },
+   {
+    "accent": "modern-standard-arabic",
+    "locale": "ar-SA",
+    "is_native": false
+   },
+   {
+    "accent": "standard-german",
+    "locale": "de-DE",
+    "is_native": false
+   },
+   {
+    "accent": "canadian-french",
+    "locale": "fr-CA",
+    "is_native": false
+   },
+   {
+    "accent": "israeli",
+    "locale": "he-IL",
+    "is_native": false
+   },
+   {
+    "accent": "standard-italian",
+    "locale": "it-IT",
+    "is_native": false
+   },
+   {
+    "accent": "standard-japanese",
+    "locale": "ja-JP",
+    "is_native": false
+   },
+   {
+    "accent": "brazilian-portuguese",
+    "locale": "pt-BR",
+    "is_native": false
+   },
+   {
+    "accent": "central-tamil",
+    "locale": "ta-IN",
+    "is_native": false
+   },
+   {
+    "accent": "telangana",
+    "locale": "te-IN",
+    "is_native": false
+   },
+   {
+    "accent": "central-thai",
+    "locale": "th-TH",
+    "is_native": false
+   },
+   {
+    "accent": "mandarin",
+    "locale": "zh-CN",
+    "is_native": false
+   }
+  ]
+ },
+ {
+  "id": "694f9389-aac1-45b6-b726-9d9369183238",
+  "description": "Soothing female for meditations and calming conversations",
+  "created_at": "1970-05-05T00:00:00.000Z",
+  "language": "en",
+  "is_owner": false,
+  "status": "active",
+  "gender": "feminine",
+  "country": "US",
+  "is_pro": false,
+  "name": "Sarah",
+  "tagline": "Mindful Woman",
+  "access": "public",
+  "visibility": "all",
+  "accents": [
+   {
+    "accent": "general-american",
+    "locale": "en-US",
+    "is_native": true
+   },
+   {
+    "accent": "standard-hindi",
+    "locale": "hi-IN",
+    "is_native": false
+   },
+   {
+    "accent": "mexican",
+    "locale": "es-MX",
+    "is_native": false
+   },
+   {
+    "accent": "standard-german",
+    "locale": "de-DE",
+    "is_native": false
+   },
+   {
+    "accent": "canadian-french",
+    "locale": "fr-CA",
+    "is_native": false
+   },
+   {
+    "accent": "israeli",
+    "locale": "he-IL",
+    "is_native": false
+   },
+   {
+    "accent": "standard-italian",
+    "locale": "it-IT",
+    "is_native": false
+   },
+   {
+    "accent": "standard-japanese",
+    "locale": "ja-JP",
+    "is_native": false
+   },
+   {
+    "accent": "brazilian-portuguese",
+    "locale": "pt-BR",
+    "is_native": false
+   },
+   {
+    "accent": "telangana",
+    "locale": "te-IN",
+    "is_native": false
+   },
+   {
+    "accent": "mandarin",
+    "locale": "zh-CN",
+    "is_native": false
+   }
+  ]
+ },
+ {
+  "id": "af346552-54bf-4c2b-a4d4-9d2820f51b6c",
+  "description": "Authoritative mature female for frontline customer support use cases",
+  "created_at": "1970-04-30T00:01:00.000Z",
+  "language": "en",
+  "is_owner": false,
+  "status": "active",
+  "gender": "feminine",
+  "country": "US",
+  "is_pro": false,
+  "name": "Valerie",
+  "tagline": "Support Authority",
+  "access": "public",
+  "visibility": "all",
+  "accents": [
+   {
+    "accent": "african-american",
+    "locale": "en-US",
+    "is_native": true
+   },
+   {
+    "accent": "australian",
+    "locale": "en-AU",
+    "is_native": false
+   },
+   {
+    "accent": "british",
+    "locale": "en-GB",
+    "is_native": false
+   },
+   {
+    "accent": "mexican",
+    "locale": "es-MX",
+    "is_native": false
+   },
+   {
+    "accent": "standard-japanese",
+    "locale": "ja-JP",
+    "is_native": false
+   },
+   {
+    "accent": "brazilian-portuguese",
+    "locale": "pt-BR",
+    "is_native": false
+   }
+  ]
+ },
+ {
+  "id": "a167e0f3-df7e-4d52-a9c3-f949145efdab",
+  "description": "Energetic adult male for engaging customer support",
+  "created_at": "1970-04-25T00:00:00.000Z",
+  "language": "en",
+  "is_owner": false,
+  "status": "active",
+  "gender": "masculine",
+  "country": "US",
+  "is_pro": false,
+  "name": "Blake",
+  "tagline": "Helpful Agent",
+  "access": "public",
+  "visibility": "all",
+  "accents": [
+   {
+    "accent": "general-american",
+    "locale": "en-US",
+    "is_native": true
+   },
+   {
+    "accent": "standard-hindi",
+    "locale": "hi-IN",
+    "is_native": false
+   },
+   {
+    "accent": "mexican",
+    "locale": "es-MX",
+    "is_native": false
+   },
+   {
+    "accent": "standard-german",
+    "locale": "de-DE",
+    "is_native": false
+   },
+   {
+    "accent": "canadian-french",
+    "locale": "fr-CA",
+    "is_native": false
+   },
+   {
+    "accent": "standard-italian",
+    "locale": "it-IT",
+    "is_native": false
+   },
+   {
+    "accent": "standard-japanese",
+    "locale": "ja-JP",
+    "is_native": false
+   },
+   {
+    "accent": "brazilian-portuguese",
+    "locale": "pt-BR",
+    "is_native": false
+   },
+   {
+    "accent": "telangana",
+    "locale": "te-IN",
+    "is_native": false
+   },
+   {
+    "accent": "mandarin",
+    "locale": "zh-CN",
+    "is_native": false
+   }
+  ]
+ },
+ {
+  "id": "00967b2f-88a6-4a31-8153-110a92134b9f",
+  "description": "Firm adult male for audiobooks and clear communication",
+  "created_at": "1970-04-18T00:04:00.000Z",
+  "language": "en",
+  "is_owner": false,
+  "status": "active",
+  "gender": "masculine",
+  "country": "US",
+  "is_pro": false,
+  "name": "Asher",
+  "tagline": "Podcaster",
+  "access": "public",
+  "visibility": "all",
+  "accents": [
+   {
+    "accent": "general-american",
+    "locale": "en-US",
+    "is_native": true
+   },
+   {
+    "accent": "british",
+    "locale": "en-GB",
+    "is_native": false
+   },
+   {
+    "accent": "standard-hindi",
+    "locale": "hi-IN",
+    "is_native": false
+   },
+   {
+    "accent": "mexican",
+    "locale": "es-MX",
+    "is_native": false
+   },
+   {
+    "accent": "modern-standard-arabic",
+    "locale": "ar-SA",
+    "is_native": false
+   },
+   {
+    "accent": "standard-german",
+    "locale": "de-DE",
+    "is_native": false
+   },
+   {
+    "accent": "canadian-french",
+    "locale": "fr-CA",
+    "is_native": false
+   },
+   {
+    "accent": "parisian",
+    "locale": "fr-FR",
+    "is_native": false
+   },
+   {
+    "accent": "israeli",
+    "locale": "he-IL",
+    "is_native": false
+   },
+   {
+    "accent": "standard-italian",
+    "locale": "it-IT",
+    "is_native": false
+   },
+   {
+    "accent": "standard-japanese",
+    "locale": "ja-JP",
+    "is_native": false
+   },
+   {
+    "accent": "oslo",
+    "locale": "no-NO",
+    "is_native": false
+   },
+   {
+    "accent": "brazilian-portuguese",
+    "locale": "pt-BR",
+    "is_native": false
+   },
+   {
+    "accent": "central-tamil",
+    "locale": "ta-IN",
+    "is_native": false
+   },
+   {
+    "accent": "telangana",
+    "locale": "te-IN",
+    "is_native": false
+   },
+   {
+    "accent": "central-thai",
+    "locale": "th-TH",
+    "is_native": false
+   },
+   {
+    "accent": "manila",
+    "locale": "tl-PH",
+    "is_native": false
+   },
+   {
+    "accent": "urdu",
+    "locale": "ur-PK",
+    "is_native": false
+   },
+   {
+    "accent": "mandarin",
+    "locale": "zh-CN",
+    "is_native": false
+   }
+  ]
+ },
+ {
+  "id": "4d0a198a-0316-4471-981a-1ceca7e546c6",
+  "description": "",
+  "created_at": "2026-10-29T06:20:06.363Z",
+  "language": "ja",
+  "is_owner": true,
+  "status": "active",
+  "is_pro": false,
+  "name": "me",
+  "tagline": "",
+  "access": "private",
+  "visibility": "owner"
+ }
+]
