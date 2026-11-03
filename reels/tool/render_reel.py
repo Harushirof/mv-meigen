@@ -37,6 +37,19 @@ VERT_MAP = {"ー": "丨", "―": "丨", "－": "丨", "-": "丨", "…": "︙", 
 DROP = set("、。，．,.？?！!　 ")
 TITLE_COLORS = [(255, 214, 0), (230, 20, 30), (40, 200, 60)]
 
+# 見た目の設定（config.json の "style" で上書きできる）
+# outline: "stroke"＝太い黒フチ（偉人の手帳と同じ）／"shadow"＝フチなしで後ろに薄い影
+STYLE = {"telop_font": SERIF, "title_font": GOTHIC, "title_colors": TITLE_COLORS, "outline": "stroke"}
+
+
+def add_shadow(img, blur=10, strength=1.6):
+    """文字の後ろに、ぼかした黒い影を敷く。"""
+    a = img.split()[3].filter(ImageFilter.GaussianBlur(blur)).point(lambda v: min(255, int(v * strength)))
+    out = Image.new("RGBA", img.size, (0, 0, 0, 0))
+    out.putalpha(a)
+    out.alpha_composite(img)
+    return out
+
 
 def split_telop(sentence, max_len=16):
     """1文を、テロップ1枚あたり max_len 文字以内に区切る。読点で区切り、長ければ助詞の後ろで切る。"""
@@ -115,10 +128,14 @@ def make_telop_overlay(text, cache={}):
         per_col = max(len(c) for c in text.split("/"))
     if per_col > 12 or len(text.replace("/", "")) > 24:
         size = 92
-    font = ImageFont.truetype(SERIF, size)
+    font = ImageFont.truetype(STYLE["telop_font"], size)
     rows = min(len(text.replace("/", "")), per_col)
     top = max(330, int(H * 0.5 - rows * size * 1.02 / 2) - 80)
-    draw_vertical(d, text, font, W / 2, top, size, (255, 255, 255), 10, (0, 0, 0), per_col=per_col)
+    if STYLE["outline"] == "shadow":
+        draw_vertical(d, text, font, W / 2, top, size, (255, 255, 255), 0, None, per_col=per_col, col_gap=1.3)
+        img = add_shadow(img)
+    else:
+        draw_vertical(d, text, font, W / 2, top, size, (255, 255, 255), 10, (0, 0, 0), per_col=per_col)
     cache[text] = img
     return img
 
@@ -128,19 +145,24 @@ def make_title_overlay(lines):
     d = ImageDraw.Draw(img)
     longest = max(len(l) for l in lines)
     size = min(150, int((H - 520) / max(longest, 1) / 1.02))
-    font = ImageFont.truetype(GOTHIC, size)
-    col_w = size * 1.12
+    font = ImageFont.truetype(STYLE["title_font"], size)
+    shadow = STYLE["outline"] == "shadow"
+    colors = STYLE["title_colors"] or [(255, 255, 255)]
+    col_w = size * (1.25 if shadow else 1.12)
     n = len(lines)
     first_x = W / 2 + (n - 1) * col_w / 2
     for i, line in enumerate(lines):
         x = first_x - i * col_w
-        y = 320
-        color = TITLE_COLORS[i % len(TITLE_COLORS)]
+        y = 370 if shadow else 320
+        color = tuple(colors[i % len(colors)])
         for ch in line:
             g = VERT_MAP.get(ch, ch)
-            d.text((x, y), g, font=font, fill=color, anchor="mt", stroke_width=14, stroke_fill=(0, 0, 0))
+            if shadow:
+                d.text((x, y), g, font=font, fill=color, anchor="mt")
+            else:
+                d.text((x, y), g, font=font, fill=color, anchor="mt", stroke_width=14, stroke_fill=(0, 0, 0))
             y += size * 1.02
-    return img
+    return add_shadow(img) if shadow else img
 
 
 def make_band(name, years):
@@ -213,6 +235,13 @@ def main(cfg_path):
     cfg = json.load(open(cfg_path, encoding="utf-8"))
     base = os.path.dirname(os.path.abspath(cfg_path))
     p = lambda x: x if os.path.isabs(x) else os.path.join(base, x)
+    st = cfg.get("style", {})
+    for k in ("telop_font", "title_font"):
+        if st.get(k):
+            STYLE[k] = st[k] if os.path.isabs(st[k]) else os.path.join(FONT_DIR, st[k])
+    if "title_colors" in st:
+        STYLE["title_colors"] = st["title_colors"]
+    STYLE["outline"] = st.get("outline", STYLE["outline"])
     audio = p(cfg["audio"])
     timings = load_timings(p(cfg["timings"]), float(cfg.get("timing_offset", 0)))
     duration = float(subprocess.run(

@@ -12,5 +12,11 @@
   "photos": [],
   "grayscale": true,
   "output": "chanel_tiktok.mp4",
-  "telop_file": "telop.txt"
+  "telop_file": "telop.txt",
+  "style": {
+    "telop_font": "ShipporiMincho_500Medium.ttf",
+    "title_font": "ShipporiMincho_500Medium.ttf",
+    "title_colors": null,
+    "outline": "shadow"
+  }
 }
