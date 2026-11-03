@@ -12,6 +12,7 @@
 
 必要なもの：Python 3.9+、Pillow、ffmpeg（PATHに通っていること）
 使い方：python render_reel.py config.json
+設定例：reels/new02_chanel_tiktok/config.json（photos が空なら仮の暗い背景で書き出す）
 """
 import csv
 import json
@@ -135,14 +136,22 @@ def make_band(name, years):
     return img
 
 
-def prep_photo(path):
-    """白黒・暗め・9:16に合わせて少し大きめに切り出す（拡大の余白用）。"""
-    im = Image.open(path).convert("L")
+def prep_photo(path, grayscale=True, brightness=0.72):
+    """暗め・9:16に合わせて少し大きめに切り出す（拡大の余白用）。grayscale=True で白黒にする。"""
+    im = Image.open(path)
+    im = ImageOps.exif_transpose(im).convert("L" if grayscale else "RGB")
     im = ImageOps.autocontrast(im, cutoff=1)
-    im = im.point(lambda v: int(v * 0.72))
+    im = im.point(lambda v: int(v * brightness))
     base_w, base_h = int(W * 1.15), int(H * 1.15)
     im = ImageOps.fit(im, (base_w, base_h), Image.LANCZOS, centering=(0.5, 0.35))
     return im.convert("RGB")
+
+
+def placeholder_bg():
+    """画像がまだ無いときの仮背景（暗いグレーのグラデーション）。"""
+    base_w, base_h = int(W * 1.15), int(H * 1.15)
+    grad = Image.linear_gradient("L").resize((base_w, base_h)).point(lambda v: 25 + int(v * 0.12))
+    return grad.convert("RGB")
 
 
 def frame_bg(photo, t_in_seg, seg_len):
@@ -156,11 +165,12 @@ def frame_bg(photo, t_in_seg, seg_len):
     return photo.crop((x0, y0, x0 + cw, y0 + ch)).resize((W, H), Image.BILINEAR)
 
 
-def load_timings(path):
+def load_timings(path, offset=0.0):
+    """offset：音声の頭に無音やBGMだけの区間がある場合、その秒数だけ後ろにずらす。"""
     rows = []
     with open(path, encoding="utf-8-sig") as f:
         for r in csv.DictReader(f):
-            rows.append((float(r["start_sec"]), float(r["end_sec"]), r["text"]))
+            rows.append((float(r["start_sec"]) + offset, float(r["end_sec"]) + offset, r["text"]))
     return rows
 
 
@@ -186,11 +196,13 @@ def main(cfg_path):
     base = os.path.dirname(os.path.abspath(cfg_path))
     p = lambda x: x if os.path.isabs(x) else os.path.join(base, x)
     audio = p(cfg["audio"])
-    timings = load_timings(p(cfg["timings"]))
+    timings = load_timings(p(cfg["timings"]), float(cfg.get("timing_offset", 0)))
     duration = float(subprocess.run(
         ["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", audio],
         capture_output=True, text=True).stdout.strip())
-    photos = [prep_photo(p(x)) for x in cfg["photos"]]
+    gray = cfg.get("grayscale", True)
+    photos = [prep_photo(p(x), gray, float(cfg.get("brightness", 0.72))) for x in cfg.get("photos", [])]
+    photos = photos or [placeholder_bg()]
     seg = duration / len(photos)
     band = make_band(cfg["name"], cfg["years"])
     title = make_title_overlay(cfg["title_lines"])
@@ -212,10 +224,11 @@ def main(cfg_path):
         k = min(int(t // seg), len(photos) - 1)
         frame = frame_bg(photos[k], t - k * seg, seg).convert("RGBA")
         frame.alpha_composite(band)
-        while si + 1 < len(sched) and t >= sched[si][1]:
+        # 次のテロップが始まるまでは今のテロップを出し続ける（文と文の間の無音で消えないように）
+        while si + 1 < len(sched) and t >= sched[si + 1][0] - 0.05:
             si += 1
         s, e, kind, content = sched[si]
-        if s - 0.05 <= t:
+        if s - 0.05 <= t <= e + 0.6:
             frame.alpha_composite(title if kind == "title" else make_telop_overlay(content))
         ff.stdin.write(frame.convert("RGB").tobytes())
         if fi % (FPS * 10) == 0:
