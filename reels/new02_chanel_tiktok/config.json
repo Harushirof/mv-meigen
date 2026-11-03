@@ -1,11 +1,16 @@
 {
   "name": "ココ・シャネル",
   "years": "1883〜1971",
-  "title_lines": ["選ばれる女より", "自分で選ぶ女に", "なりなさい"],
+  "title_lines": [
+    "選ばれる女より",
+    "自分で選ぶ女に",
+    "なりなさい"
+  ],
   "audio": "chanel_rachel08_gap06_bgm14_ShinshiiAsa.mp3",
   "timings": "timings.csv",
   "timing_offset": 1.0,
   "photos": [],
   "grayscale": true,
-  "output": "chanel_tiktok.mp4"
+  "output": "chanel_tiktok.mp4",
+  "telop_file": "telop.txt"
 }

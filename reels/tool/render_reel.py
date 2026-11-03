@@ -58,20 +58,36 @@ def split_telop(sentence, max_len=16):
 
 
 def vertical_columns(text, per_col):
-    cols, cur = [], ""
-    for ch in text:
-        cur += ch
-        if len(cur) >= per_col:
-            cols.append(cur)
-            cur = ""
-    if cur:
-        cols.append(cur)
-    return cols
+    """縦書きの列に分ける。2列になるときは、真ん中に近い助詞の後ろで切って言葉の途中で折り返さない。"""
+    if len(text) <= per_col:
+        return [text]
+    if len(text) <= per_col * 2:
+        mid = len(text) / 2
+        best = None
+        for i in range(max(2, len(text) - per_col), min(per_col, len(text) - 2) + 1):
+            if text[i - 1] in "はがをにでとものへやてばらどね":
+                if best is None or abs(i - mid) < abs(best - mid):
+                    best = i
+        cut = best or math.ceil(mid)
+        return [text[:cut], text[cut:]]
+    return [text[i:i + per_col] for i in range(0, len(text), per_col)]
+
+
+def load_telop_file(path):
+    """手で区切ったテロップ。1行＝1文、全角スペースでテロップを区切り、「/」で縦書きの列を折り返す。#で始まる行は無視。"""
+    rows = []
+    with open(path, encoding="utf-8-sig") as f:
+        for line in f:
+            line = line.rstrip("\n")
+            if not line.strip() or line.startswith("#"):
+                continue
+            rows.append([u for u in re.split(r"[　 ]+", line.strip()) if u])
+    return rows
 
 
 def draw_vertical(draw, text, font, center_x, top_y, size, fill, stroke, stroke_fill, per_col=10, col_gap=1.15):
     """縦書き。列は右から左へ。center_x は列群全体の中心。"""
-    cols = vertical_columns(text, per_col)
+    cols = text.split("/") if "/" in text else vertical_columns(text, per_col)
     n = len(cols)
     col_w = size * col_gap
     first_x = center_x + (n - 1) * col_w / 2
@@ -95,10 +111,12 @@ def make_telop_overlay(text, cache={}):
     d = ImageDraw.Draw(img)
     size = 104
     per_col = 10 if len(text) <= 20 else 12
-    if len(text) > per_col * 2:
+    if "/" in text:
+        per_col = max(len(c) for c in text.split("/"))
+    if per_col > 12 or len(text.replace("/", "")) > 24:
         size = 92
     font = ImageFont.truetype(SERIF, size)
-    rows = min(len(text), per_col)
+    rows = min(len(text.replace("/", "")), per_col)
     top = max(330, int(H * 0.5 - rows * size * 1.02 / 2) - 80)
     draw_vertical(d, text, font, W / 2, top, size, (255, 255, 255), 10, (0, 0, 0), per_col=per_col)
     cache[text] = img
@@ -174,18 +192,18 @@ def load_timings(path, offset=0.0):
     return rows
 
 
-def build_schedule(timings, title_lines):
+def build_schedule(timings, title_lines, manual=None):
     """(開始, 終了, 種類, 内容) のリスト。1文目はタイトル表示、以降は文字数比で各テロップに時間を配分。"""
     sched = []
     for i, (s, e, text) in enumerate(timings):
         if i == 0:
             sched.append((s, e, "title", title_lines))
             continue
-        units = split_telop(text)
-        total = sum(len(u) for u in units) or 1
+        units = manual[i] if manual else split_telop(text)
+        total = sum(len(u.replace("/", "")) for u in units) or 1
         t = s
         for u in units:
-            d = (e - s) * len(u) / total
+            d = (e - s) * len(u.replace("/", "")) / total
             sched.append((t, t + d, "telop", u))
             t += d
     return sched
@@ -206,7 +224,10 @@ def main(cfg_path):
     seg = duration / len(photos)
     band = make_band(cfg["name"], cfg["years"])
     title = make_title_overlay(cfg["title_lines"])
-    sched = build_schedule(timings, cfg["title_lines"])
+    manual = load_telop_file(p(cfg["telop_file"])) if cfg.get("telop_file") else None
+    if manual and len(manual) != len(timings):
+        sys.exit(f"telop_file の行数（{len(manual)}）が音声の文の数（{len(timings)}）と合いません")
+    sched = build_schedule(timings, cfg["title_lines"], manual)
     out = p(cfg.get("output", "reel.mp4"))
 
     ff = subprocess.Popen([
