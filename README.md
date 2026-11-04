@@ -11,6 +11,7 @@
 | `reels/new01_tiktok/`、`reels/new02_chanel_tiktok/` | TikTok 向けの短尺ナレーション |
 | `reels/skill/SKILL.md` | 台本を作る Skill |
 | `reels/tool/render_reel.py` | 縦型動画のレンダラー |
+| `chanel/`、`.claude/skills/chanel-*` | シャネル版を Claude Code で作る一式（`chanel/README.md`） |
 | `tts_compare/` | Gemini と Cartesia の音声合成を比べるスクリプト |
 
 ## Git に入れていないもの
