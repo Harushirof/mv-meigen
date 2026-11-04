@@ -12,6 +12,7 @@
 
 必要なもの：Python 3.9+、Pillow、ffmpeg（PATHに通っていること）
 使い方：python render_reel.py config.json
+設定例：reels/new02_chanel_tiktok/config.json（photos が空なら仮の暗い背景で書き出す）
 """
 import csv
 import json
@@ -21,7 +22,7 @@ import re
 import subprocess
 import sys
 
-from PIL import Image, ImageDraw, ImageFilter, ImageFont, ImageOps
+from PIL import Image, ImageDraw, ImageFilter, ImageFont, ImageOps, features
 
 W, H, FPS = 1080, 1920, 30
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -35,6 +36,20 @@ VERT_MAP = {"ー": "丨", "―": "丨", "－": "丨", "-": "丨", "…": "︙", 
             "『": "﹃", "』": "﹄", "（": "︵", "）": "︶", "(": "︵", ")": "︶", "〜": "丨", "~": "丨"}
 DROP = set("、。，．,.？?！!　 ")
 TITLE_COLORS = [(255, 214, 0), (230, 20, 30), (40, 200, 60)]
+
+# 見た目の設定（config.json の "style" で上書きできる）
+# outline: "stroke"＝太い黒フチ（偉人の手帳と同じ）／"shadow"＝フチなしで後ろに薄い影
+STYLE = {"telop_font": SERIF, "title_font": GOTHIC, "title_colors": TITLE_COLORS, "outline": "stroke", "text_x": 0.5}
+# text_x：字幕とタイトルの横位置（0＝左端、0.5＝中央、1＝右端）。人物を避けたいときに右や左へ寄せる
+
+
+def add_shadow(img, blur=10, strength=1.6):
+    """文字の後ろに、ぼかした黒い影を敷く。"""
+    a = img.split()[3].filter(ImageFilter.GaussianBlur(blur)).point(lambda v: min(255, int(v * strength)))
+    out = Image.new("RGBA", img.size, (0, 0, 0, 0))
+    out.putalpha(a)
+    out.alpha_composite(img)
+    return out
 
 
 def split_telop(sentence, max_len=16):
@@ -57,34 +72,61 @@ def split_telop(sentence, max_len=16):
 
 
 def vertical_columns(text, per_col):
-    cols, cur = [], ""
-    for ch in text:
-        cur += ch
-        if len(cur) >= per_col:
-            cols.append(cur)
-            cur = ""
-    if cur:
-        cols.append(cur)
-    return cols
+    """縦書きの列に分ける。2列になるときは、真ん中に近い助詞の後ろで切って言葉の途中で折り返さない。"""
+    if len(text) <= per_col:
+        return [text]
+    if len(text) <= per_col * 2:
+        mid = len(text) / 2
+        best = None
+        for i in range(max(2, len(text) - per_col), min(per_col, len(text) - 2) + 1):
+            if text[i - 1] in "はがをにでとものへやてばらどね":
+                if best is None or abs(i - mid) < abs(best - mid):
+                    best = i
+        cut = best or math.ceil(mid)
+        return [text[:cut], text[cut:]]
+    return [text[i:i + per_col] for i in range(0, len(text), per_col)]
+
+
+def load_telop_file(path):
+    """手で区切ったテロップ。1行＝1文、全角スペースでテロップを区切り、「/」で縦書きの列を折り返す。#で始まる行は無視。"""
+    rows = []
+    with open(path, encoding="utf-8-sig") as f:
+        for line in f:
+            line = line.rstrip("\n")
+            if not line.strip() or line.startswith("#"):
+                continue
+            rows.append([u for u in re.split(r"[　 ]+", line.strip()) if u])
+    return rows
+
+
+HAS_RAQM = features.check("raqm")
+
+
+def draw_column(draw, col, font, x, y, size, fill, stroke=0, stroke_fill=None):
+    """縦書き1列。フォントの縦書き用の字形と字送りを使う（小さい「っ」や「ー」も正しい位置と向きになる）。
+    縦書き組版の機能（raqm）が無い環境では、1文字ずつ並べる方式に切り替える。"""
+    kw = {"stroke_width": stroke, "stroke_fill": stroke_fill} if stroke else {}
+    if HAS_RAQM:
+        draw.text((x, y), col, font=font, fill=fill, anchor="mt", direction="ttb", features=["vert"], **kw)
+        return
+    for ch in col:
+        g = VERT_MAP.get(ch, ch)
+        small = ch in "ぁぃぅぇぉっゃゅょゎァィゥェォッャュョヮ"
+        ox = size * 0.12 if small else 0
+        oy = -size * 0.12 if small else 0
+        draw.text((x + ox, y + oy), g, font=font, fill=fill, anchor="mt", **kw)
+        y += size * 1.02
 
 
 def draw_vertical(draw, text, font, center_x, top_y, size, fill, stroke, stroke_fill, per_col=10, col_gap=1.15):
     """縦書き。列は右から左へ。center_x は列群全体の中心。"""
-    cols = vertical_columns(text, per_col)
+    cols = text.split("/") if "/" in text else vertical_columns(text, per_col)
     n = len(cols)
     col_w = size * col_gap
     first_x = center_x + (n - 1) * col_w / 2
     for ci, col in enumerate(cols):
         x = first_x - ci * col_w
-        y = top_y
-        for ch in col:
-            g = VERT_MAP.get(ch, ch)
-            small = ch in "ぁぃぅぇぉっゃゅょゎァィゥェォッャュョヮ"
-            ox = size * 0.12 if small else 0
-            oy = -size * 0.12 if small else 0
-            draw.text((x + ox, y + oy), g, font=font, fill=fill, anchor="mt",
-                      stroke_width=stroke, stroke_fill=stroke_fill)
-            y += size * 1.02
+        draw_column(draw, col, font, x, top_y, size, fill, stroke, stroke_fill)
 
 
 def make_telop_overlay(text, cache={}):
@@ -94,12 +136,18 @@ def make_telop_overlay(text, cache={}):
     d = ImageDraw.Draw(img)
     size = 104
     per_col = 10 if len(text) <= 20 else 12
-    if len(text) > per_col * 2:
+    if "/" in text:
+        per_col = max(len(c) for c in text.split("/"))
+    if per_col > 12 or len(text.replace("/", "")) > 24:
         size = 92
-    font = ImageFont.truetype(SERIF, size)
-    rows = min(len(text), per_col)
+    font = ImageFont.truetype(STYLE["telop_font"], size)
+    rows = min(len(text.replace("/", "")), per_col)
     top = max(330, int(H * 0.5 - rows * size * 1.02 / 2) - 80)
-    draw_vertical(d, text, font, W / 2, top, size, (255, 255, 255), 10, (0, 0, 0), per_col=per_col)
+    if STYLE["outline"] == "shadow":
+        draw_vertical(d, text, font, W * STYLE["text_x"], top, size, (255, 255, 255), 0, None, per_col=per_col, col_gap=1.3)
+        img = add_shadow(img)
+    else:
+        draw_vertical(d, text, font, W * STYLE["text_x"], top, size, (255, 255, 255), 10, (0, 0, 0), per_col=per_col)
     cache[text] = img
     return img
 
@@ -109,19 +157,18 @@ def make_title_overlay(lines):
     d = ImageDraw.Draw(img)
     longest = max(len(l) for l in lines)
     size = min(150, int((H - 520) / max(longest, 1) / 1.02))
-    font = ImageFont.truetype(GOTHIC, size)
-    col_w = size * 1.12
+    font = ImageFont.truetype(STYLE["title_font"], size)
+    shadow = STYLE["outline"] == "shadow"
+    colors = STYLE["title_colors"] or [(255, 255, 255)]
+    col_w = size * (1.25 if shadow else 1.12)
     n = len(lines)
-    first_x = W / 2 + (n - 1) * col_w / 2
+    first_x = W * STYLE["text_x"] + (n - 1) * col_w / 2
     for i, line in enumerate(lines):
         x = first_x - i * col_w
-        y = 320
-        color = TITLE_COLORS[i % len(TITLE_COLORS)]
-        for ch in line:
-            g = VERT_MAP.get(ch, ch)
-            d.text((x, y), g, font=font, fill=color, anchor="mt", stroke_width=14, stroke_fill=(0, 0, 0))
-            y += size * 1.02
-    return img
+        y = 370 if shadow else 320
+        color = tuple(colors[i % len(colors)])
+        draw_column(d, line, font, x, y, size, color, 0 if shadow else 14, None if shadow else (0, 0, 0))
+    return add_shadow(img) if shadow else img
 
 
 def make_band(name, years):
@@ -135,14 +182,22 @@ def make_band(name, years):
     return img
 
 
-def prep_photo(path):
-    """白黒・暗め・9:16に合わせて少し大きめに切り出す（拡大の余白用）。"""
-    im = Image.open(path).convert("L")
+def prep_photo(path, grayscale=True, brightness=0.72):
+    """暗め・9:16に合わせて少し大きめに切り出す（拡大の余白用）。grayscale=True で白黒にする。"""
+    im = Image.open(path)
+    im = ImageOps.exif_transpose(im).convert("L" if grayscale else "RGB")
     im = ImageOps.autocontrast(im, cutoff=1)
-    im = im.point(lambda v: int(v * 0.72))
+    im = im.point(lambda v: int(v * brightness))
     base_w, base_h = int(W * 1.15), int(H * 1.15)
     im = ImageOps.fit(im, (base_w, base_h), Image.LANCZOS, centering=(0.5, 0.35))
     return im.convert("RGB")
+
+
+def placeholder_bg():
+    """画像がまだ無いときの仮背景（暗いグレーのグラデーション）。"""
+    base_w, base_h = int(W * 1.15), int(H * 1.15)
+    grad = Image.linear_gradient("L").resize((base_w, base_h)).point(lambda v: 25 + int(v * 0.12))
+    return grad.convert("RGB")
 
 
 def frame_bg(photo, t_in_seg, seg_len):
@@ -156,26 +211,27 @@ def frame_bg(photo, t_in_seg, seg_len):
     return photo.crop((x0, y0, x0 + cw, y0 + ch)).resize((W, H), Image.BILINEAR)
 
 
-def load_timings(path):
+def load_timings(path, offset=0.0):
+    """offset：音声の頭に無音やBGMだけの区間がある場合、その秒数だけ後ろにずらす。"""
     rows = []
     with open(path, encoding="utf-8-sig") as f:
         for r in csv.DictReader(f):
-            rows.append((float(r["start_sec"]), float(r["end_sec"]), r["text"]))
+            rows.append((float(r["start_sec"]) + offset, float(r["end_sec"]) + offset, r["text"]))
     return rows
 
 
-def build_schedule(timings, title_lines):
+def build_schedule(timings, title_lines, manual=None):
     """(開始, 終了, 種類, 内容) のリスト。1文目はタイトル表示、以降は文字数比で各テロップに時間を配分。"""
     sched = []
     for i, (s, e, text) in enumerate(timings):
         if i == 0:
             sched.append((s, e, "title", title_lines))
             continue
-        units = split_telop(text)
-        total = sum(len(u) for u in units) or 1
+        units = manual[i] if manual else split_telop(text)
+        total = sum(len(u.replace("/", "")) for u in units) or 1
         t = s
         for u in units:
-            d = (e - s) * len(u) / total
+            d = (e - s) * len(u.replace("/", "")) / total
             sched.append((t, t + d, "telop", u))
             t += d
     return sched
@@ -185,16 +241,29 @@ def main(cfg_path):
     cfg = json.load(open(cfg_path, encoding="utf-8"))
     base = os.path.dirname(os.path.abspath(cfg_path))
     p = lambda x: x if os.path.isabs(x) else os.path.join(base, x)
+    st = cfg.get("style", {})
+    for k in ("telop_font", "title_font"):
+        if st.get(k):
+            STYLE[k] = st[k] if os.path.isabs(st[k]) else os.path.join(FONT_DIR, st[k])
+    if "title_colors" in st:
+        STYLE["title_colors"] = st["title_colors"]
+    STYLE["outline"] = st.get("outline", STYLE["outline"])
+    STYLE["text_x"] = float(st.get("text_x", STYLE["text_x"]))
     audio = p(cfg["audio"])
-    timings = load_timings(p(cfg["timings"]))
+    timings = load_timings(p(cfg["timings"]), float(cfg.get("timing_offset", 0)))
     duration = float(subprocess.run(
         ["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", audio],
         capture_output=True, text=True).stdout.strip())
-    photos = [prep_photo(p(x)) for x in cfg["photos"]]
+    gray = cfg.get("grayscale", True)
+    photos = [prep_photo(p(x), gray, float(cfg.get("brightness", 0.72))) for x in cfg.get("photos", [])]
+    photos = photos or [placeholder_bg()]
     seg = duration / len(photos)
     band = make_band(cfg["name"], cfg["years"])
     title = make_title_overlay(cfg["title_lines"])
-    sched = build_schedule(timings, cfg["title_lines"])
+    manual = load_telop_file(p(cfg["telop_file"])) if cfg.get("telop_file") else None
+    if manual and len(manual) != len(timings):
+        sys.exit(f"telop_file の行数（{len(manual)}）が音声の文の数（{len(timings)}）と合いません")
+    sched = build_schedule(timings, cfg["title_lines"], manual)
     out = p(cfg.get("output", "reel.mp4"))
 
     ff = subprocess.Popen([
@@ -212,10 +281,11 @@ def main(cfg_path):
         k = min(int(t // seg), len(photos) - 1)
         frame = frame_bg(photos[k], t - k * seg, seg).convert("RGBA")
         frame.alpha_composite(band)
-        while si + 1 < len(sched) and t >= sched[si][1]:
+        # 次のテロップが始まるまでは今のテロップを出し続ける（文と文の間の無音で消えないように）
+        while si + 1 < len(sched) and t >= sched[si + 1][0] - 0.05:
             si += 1
         s, e, kind, content = sched[si]
-        if s - 0.05 <= t:
+        if s - 0.05 <= t <= e + 0.6:
             frame.alpha_composite(title if kind == "title" else make_telop_overlay(content))
         ff.stdin.write(frame.convert("RGB").tobytes())
         if fi % (FPS * 10) == 0:
