@@ -18,3 +18,8 @@ __pycache__/
 
 # 背景画像（生成画像はGitに入れない）
 reels/*/images/
+
+# シャネル版：投稿フォルダの中の生成物（テキストだけGitに上げる）
+chanel/posts/*/voice_parts/
+chanel/posts/*/*.png
+chanel/posts/*/voice_report.json

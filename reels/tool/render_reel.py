@@ -11,7 +11,8 @@
 - 本文：白い太字明朝・黒フチの縦書きテロップを1フレーズずつ表示
 
 必要なもの：Python 3.9+、Pillow、ffmpeg（PATHに通っていること）
-使い方：python render_reel.py config.json
+使い方：python render_reel.py config.json            動画（config の "thumbnail" があればサムネPNGも）
+       python render_reel.py config.json --thumbnail-only  サムネPNGだけ
 設定例：reels/new02_chanel_tiktok/config.json（photos が空なら仮の暗い背景で書き出す）
 """
 import csv
@@ -237,7 +238,16 @@ def build_schedule(timings, title_lines, manual=None):
     return sched
 
 
-def main(cfg_path):
+def save_thumbnail(path, photo, band, title):
+    """サムネ：動画冒頭のタイトル画面（背景＋上部の帯＋タイトル）を1枚の PNG にする。"""
+    frame = frame_bg(photo, 0, 1).convert("RGBA")
+    frame.alpha_composite(band)
+    frame.alpha_composite(title)
+    frame.convert("RGB").save(path)
+    print("thumbnail:", path)
+
+
+def main(cfg_path, thumbnail_only=False):
     cfg = json.load(open(cfg_path, encoding="utf-8"))
     base = os.path.dirname(os.path.abspath(cfg_path))
     p = lambda x: x if os.path.isabs(x) else os.path.join(base, x)
@@ -265,6 +275,10 @@ def main(cfg_path):
         sys.exit(f"telop_file の行数（{len(manual)}）が音声の文の数（{len(timings)}）と合いません")
     sched = build_schedule(timings, cfg["title_lines"], manual)
     out = p(cfg.get("output", "reel.mp4"))
+    if cfg.get("thumbnail") or thumbnail_only:
+        save_thumbnail(p(cfg.get("thumbnail", "thumbnail.png")), photos[0], band, title)
+    if thumbnail_only:
+        return
 
     ff = subprocess.Popen([
         "ffmpeg", "-y", "-v", "error",
@@ -296,4 +310,4 @@ def main(cfg_path):
 
 
 if __name__ == "__main__":
-    main(sys.argv[1])
+    main(sys.argv[1], "--thumbnail-only" in sys.argv[2:])
