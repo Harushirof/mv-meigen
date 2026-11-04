@@ -22,7 +22,7 @@ import re
 import subprocess
 import sys
 
-from PIL import Image, ImageDraw, ImageFilter, ImageFont, ImageOps
+from PIL import Image, ImageDraw, ImageFilter, ImageFont, ImageOps, features
 
 W, H, FPS = 1080, 1920, 30
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -99,6 +99,25 @@ def load_telop_file(path):
     return rows
 
 
+HAS_RAQM = features.check("raqm")
+
+
+def draw_column(draw, col, font, x, y, size, fill, stroke=0, stroke_fill=None):
+    """縦書き1列。フォントの縦書き用の字形と字送りを使う（小さい「っ」や「ー」も正しい位置と向きになる）。
+    縦書き組版の機能（raqm）が無い環境では、1文字ずつ並べる方式に切り替える。"""
+    kw = {"stroke_width": stroke, "stroke_fill": stroke_fill} if stroke else {}
+    if HAS_RAQM:
+        draw.text((x, y), col, font=font, fill=fill, anchor="mt", direction="ttb", features=["vert"], **kw)
+        return
+    for ch in col:
+        g = VERT_MAP.get(ch, ch)
+        small = ch in "ぁぃぅぇぉっゃゅょゎァィゥェォッャュョヮ"
+        ox = size * 0.12 if small else 0
+        oy = -size * 0.12 if small else 0
+        draw.text((x + ox, y + oy), g, font=font, fill=fill, anchor="mt", **kw)
+        y += size * 1.02
+
+
 def draw_vertical(draw, text, font, center_x, top_y, size, fill, stroke, stroke_fill, per_col=10, col_gap=1.15):
     """縦書き。列は右から左へ。center_x は列群全体の中心。"""
     cols = text.split("/") if "/" in text else vertical_columns(text, per_col)
@@ -107,15 +126,7 @@ def draw_vertical(draw, text, font, center_x, top_y, size, fill, stroke, stroke_
     first_x = center_x + (n - 1) * col_w / 2
     for ci, col in enumerate(cols):
         x = first_x - ci * col_w
-        y = top_y
-        for ch in col:
-            g = VERT_MAP.get(ch, ch)
-            small = ch in "ぁぃぅぇぉっゃゅょゎァィゥェォッャュョヮ"
-            ox = size * 0.12 if small else 0
-            oy = -size * 0.12 if small else 0
-            draw.text((x + ox, y + oy), g, font=font, fill=fill, anchor="mt",
-                      stroke_width=stroke, stroke_fill=stroke_fill)
-            y += size * 1.02
+        draw_column(draw, col, font, x, top_y, size, fill, stroke, stroke_fill)
 
 
 def make_telop_overlay(text, cache={}):
@@ -156,13 +167,7 @@ def make_title_overlay(lines):
         x = first_x - i * col_w
         y = 370 if shadow else 320
         color = tuple(colors[i % len(colors)])
-        for ch in line:
-            g = VERT_MAP.get(ch, ch)
-            if shadow:
-                d.text((x, y), g, font=font, fill=color, anchor="mt")
-            else:
-                d.text((x, y), g, font=font, fill=color, anchor="mt", stroke_width=14, stroke_fill=(0, 0, 0))
-            y += size * 1.02
+        draw_column(d, line, font, x, y, size, color, 0 if shadow else 14, None if shadow else (0, 0, 0))
     return add_shadow(img) if shadow else img
 
 
