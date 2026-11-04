@@ -10,7 +10,7 @@
   "timings": "timings.csv",
   "timing_offset": 1.0,
   "photos": [
-    "images/01.png"
+    "../chanel_common/background.png"
   ],
   "grayscale": true,
   "output": "chanel_tiktok.mp4",
