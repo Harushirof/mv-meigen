@@ -15,3 +15,6 @@
 __pycache__/
 *.pyc
 .venv/
+
+# 背景画像（生成画像はGitに入れない）
+reels/*/images/

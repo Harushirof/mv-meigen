@@ -39,7 +39,8 @@ TITLE_COLORS = [(255, 214, 0), (230, 20, 30), (40, 200, 60)]
 
 # 見た目の設定（config.json の "style" で上書きできる）
 # outline: "stroke"＝太い黒フチ（偉人の手帳と同じ）／"shadow"＝フチなしで後ろに薄い影
-STYLE = {"telop_font": SERIF, "title_font": GOTHIC, "title_colors": TITLE_COLORS, "outline": "stroke"}
+STYLE = {"telop_font": SERIF, "title_font": GOTHIC, "title_colors": TITLE_COLORS, "outline": "stroke", "text_x": 0.5}
+# text_x：字幕とタイトルの横位置（0＝左端、0.5＝中央、1＝右端）。人物を避けたいときに右や左へ寄せる
 
 
 def add_shadow(img, blur=10, strength=1.6):
@@ -132,10 +133,10 @@ def make_telop_overlay(text, cache={}):
     rows = min(len(text.replace("/", "")), per_col)
     top = max(330, int(H * 0.5 - rows * size * 1.02 / 2) - 80)
     if STYLE["outline"] == "shadow":
-        draw_vertical(d, text, font, W / 2, top, size, (255, 255, 255), 0, None, per_col=per_col, col_gap=1.3)
+        draw_vertical(d, text, font, W * STYLE["text_x"], top, size, (255, 255, 255), 0, None, per_col=per_col, col_gap=1.3)
         img = add_shadow(img)
     else:
-        draw_vertical(d, text, font, W / 2, top, size, (255, 255, 255), 10, (0, 0, 0), per_col=per_col)
+        draw_vertical(d, text, font, W * STYLE["text_x"], top, size, (255, 255, 255), 10, (0, 0, 0), per_col=per_col)
     cache[text] = img
     return img
 
@@ -150,7 +151,7 @@ def make_title_overlay(lines):
     colors = STYLE["title_colors"] or [(255, 255, 255)]
     col_w = size * (1.25 if shadow else 1.12)
     n = len(lines)
-    first_x = W / 2 + (n - 1) * col_w / 2
+    first_x = W * STYLE["text_x"] + (n - 1) * col_w / 2
     for i, line in enumerate(lines):
         x = first_x - i * col_w
         y = 370 if shadow else 320
@@ -242,6 +243,7 @@ def main(cfg_path):
     if "title_colors" in st:
         STYLE["title_colors"] = st["title_colors"]
     STYLE["outline"] = st.get("outline", STYLE["outline"])
+    STYLE["text_x"] = float(st.get("text_x", STYLE["text_x"]))
     audio = p(cfg["audio"])
     timings = load_timings(p(cfg["timings"]), float(cfg.get("timing_offset", 0)))
     duration = float(subprocess.run(
