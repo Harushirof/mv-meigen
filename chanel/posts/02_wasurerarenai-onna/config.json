@@ -1,0 +1,27 @@
+{
+  "name": "ココ・シャネル",
+  "years": "1883〜1971",
+  "title_lines": [
+    "愛される女より",
+    "忘れられない女に",
+    "なりなさい"
+  ],
+  "audio": "mix.mp3",
+  "timings": "timings.csv",
+  "timing_offset": 1.0,
+  "photos": [
+    "../../../reels/chanel_common/background.png"
+  ],
+  "grayscale": true,
+  "brightness": 0.6,
+  "telop_file": "telop.txt",
+  "output": "chanel02_ShinshiiAsa.mp4",
+  "thumbnail": "thumbnail.png",
+  "style": {
+    "telop_font": "ShipporiMincho_500Medium.ttf",
+    "title_font": "ShipporiMincho_500Medium.ttf",
+    "title_colors": null,
+    "outline": "shadow",
+    "text_x": 0.68
+  }
+}
